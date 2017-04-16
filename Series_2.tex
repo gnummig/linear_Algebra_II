@@ -9,9 +9,7 @@
 %opening
 \title{Exercises to the Linear Algebra $\RN{2}$ class tought by Prof Fritsche\\
 series 2}
-\author{Daniel Mayer\\
-Matrikel:\\
-2519400}
+\author{}
 \begin{document}
 
 %\maketitle
@@ -90,12 +88,13 @@ since we have shown that the conjugate transpose and the pseudoinverse commute, 
 \label{ssub:rank}
 suppose they are not equal
 \begin{equation}
-	rank_\mathbb{C}(A) \neq rank_\mathbb{C}(A^+)
+	rank_\mathbb{C}(A) < rank_\mathbb{C}(A^+)
 \end{equation}
 substituting $A^+$ for $A$ yields
 \begin{equation}
-	rank_\mathbb{C}(A^+)\neq rank_\mathbb{C}\left( (A^+)^+ \right)=rank_\mathbb{C}(A)
+	rank_\mathbb{C}(A^+)< rank_\mathbb{C}\left( (A^+)^+ \right)=rank_\mathbb{C}(A)
 \end{equation}
-which is a contradiction, hence we have $rank_\mathbb{C}(A^+)=rank_\mathbb{C}(A)$
+which is a contradiction, replacing the $<$ with a $\geq$ we get a similar contradiction and come to the conclusion that
+$rank_\mathbb{C}(A^+)=rank_\mathbb{C}(A)$
 
 \end{document}

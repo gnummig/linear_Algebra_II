@@ -3,8 +3,9 @@
 \usepackage{amssymb}   % for number sets
 \usepackage{amsmath}  % for \qed
 \usepackage{german}
-\usepackage[latin1]{inputenc}
-\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+% \usepackage[latin1]{inputenc}
+%\usepackage[T1]{fontenc}
 \usepackage[shortlabels]{enumitem} % for enumeration 
 
 \newtheorem{theorem}{Theorem}
@@ -12,16 +13,17 @@
 \newtheorem{lemma}[theorem]{Lemma}
 \newtheorem{beispiel}{Beispiel}
 \newtheorem{satz}{Satz}
+\newtheorem{beweis}{Beweis}
 %\usepackage[Encodierer]{latin9}
 
 \newcommand{\RN}[1]{%
   \textup{\uppercase\expandafter{\romannumeral#1}}%
 }
 
-\title{\textbf{Algebra $\RN{2}$}}
+\title{\textbf{Lineare Algebra $\RN{2}$}}
 \author{Skript zur Vorlesung von Prof Fritzsche\\
 		gesetzt von \\
-		Daniel Mayer}
+	einem Studierenden\dots}
 \date{}
 
 \begin{document}
@@ -29,7 +31,7 @@
 \maketitle
 
 \section{Lineare Abbildungen}
-Sei $\mathcal{K}$ ein  K"orper und V,W $\mathcal{K}$-Vektorräume
+Sei $\mathcal{K}$ ein  Körper und V,W $\mathcal{K}$-Vektorräume
 definition: Abbildung $\Phi : V \rightarrow W$ heißt 
 \begin{enumerate}
  \item additiv, falls für $ \forall v_2, v_2 \in v$ gilt $\Phi(v_1+v_2)=\Phi(v_1)+\Phi(v_2)$
@@ -60,7 +62,7 @@ beispiel: sei $A \in \mathcal{K}^{Q\times P}$ dann ist $\Phi: \mathcal{K}^Q \rig
 \Phi (\alpha x_1)=A(\alpha x_1)=\alpha Ax_1= \alpha \Phi (x_1)
 \]bemerkung sei $ \Phi : V \rightarrow W $ dann ist $\Phi$ genau dann linear wenn $\forall v_1, v_2 \in V \forall \alpha_1 \alpha_2  \in \mathcal{K} : \Phi (\alpha x_1+\alpha x_2)=:\Phi (\alpha x_1)+\Phi (\alpha x_2)$
 falls $\Phi$ linear so gilt $\Phi (\sum \alpha_iV_i )= \sum \Phi \alpha_iV_i \forall n \in \mathcal{N} v_1,...,v_n \in V alle \alpha_1,...,\alpha n \in \mathcal{K}$
-warum gilt das nicht für$ n--> \inf$
+warum gilt das nicht für$ n\rightarrow \inf$
 \begin{beispiel}
  $V = C [a,b] \mathbb{R}$-vektorraum aller stetigen funktionen  $F:[a,b]  \rightarrow \mathbb{R} \Rightarrow \Phi : C [a,b]  \rightarrow \mathbb{R}$ gemäß $\Phi(f):= \int_{a}^{b}{f(x)dx}$ eine lineare Abbildung
 \end{beispiel}
@@ -97,79 +99,80 @@ sei $\alpha \in\mathcal{K}\Rightarrow \Phi(\alpha v_1)= \alpha \Phi(v_1) \in \ti
 
 \end{beispiel}
 F9.4
-sei $\Phi V \rightarrow W $eine  linneare Abbildung, dann ist der Kern von $\Phi$ dh. die Menge$ \ker \Phi := {v \in V:\Phi (v) = 0_w}$ ein unterraum von V
+sei $\Phi V \rightarrow W $eine  linneare Abbildung, dann ist der Kern von $\Phi$ dh. die Menge$ \mathcal{K}er \Phi := {v \in V:\Phi (v) = 0_w}$ ein unterraum von V
 beweis wende S9.3 für $\tilde{U}=0_w $an
 bemerkung sei $\Phi V \rightarrow W $ linnear falls$ v_1, v_2  \in V$  derart dass 
 $\Phi v_1 = \Phi v_2, so \Phi(v_1-v_2)=\Phi(v_1)-\Phi(v_2)= 0w, $ dh.
-$ v_1-v_2\in \ker \Phi$
-beweis: falls$ \ker \Phi ={0v}$ so folgt aus vorrausgehendem beweis die injektivität von $\Phi$
-falls umgekehrt  $\Phi$ als injektiv vorrausgesetzt wird folg aus $\Phi 0_v = 0_w$ unmittelbar$ \ker\Phi={0_v}$.
+$ v_1-v_2\in \mathcal{K}er \Phi$
+beweis: falls$ \mathcal{K}er \Phi ={0v}$ so folgt aus vorrausgehendem beweis die injektivität von $\Phi$
+falls umgekehrt  $\Phi$ als injektiv vorrausgesetzt wird folg aus $\Phi 0_v = 0_w$ unmittelbar$ \mathcal{K}er\Phi={0_v}$.
 \begin{beispiel}
  Sei A $\in \mathcal{K}P\times Q$ . für $\Phi: \mathcal{K}^q \rightarrow \mathcal{K}^P $gemäß $\Phi (x):= Ax$ gelten, dann 
 $\Im \Phi = {\Phi (x): x \in \mathcal{K}^q}= {Ax:x\in \mathcal{K} ^q}=\mathcal{A}$
-und $\ker \Phi = {x \in \mathcal{K} ^q: \Phi (x)0_px_1}={x \in \mathcal{K}^q: Ax= 0_px_1}=\mathcal{A}$
+und $\mathcal{K}er \Phi = {x \in \mathcal{K} ^q: \Phi (x)0_px_1}={x \in \mathcal{K}^q: Ax= 0_px_1}=\mathcal{A}$
 \end{beispiel}
 
 
 \section{}
-Bemerkung: sei U, V und W \K vektorraäume sowie \Psi : U-->V , \Phi : U-->V lineare abbilcung, dann ist auch \Phi\dot\Psi: U--> V eine lineare abbildung, denn 
-\forall u1, u2 \in U, \alpha1 , alpha2 in \K 
-\Phi\dot\Psi(\alpha_1 u_1 \alpha2 u_2)=\Phi(\Psi(\alpha_1 u_1 \alpha2 u_2))=\Phi(\Psi(\alpha_1 u_1)\Psi( \alpha2 u_2))= \alpha_1 \phi(\Psi(u1)) #missing
-S 9.6 seien V und W \K vektorräume, wobei 1\leq q< \inf für q= \dim V erfülltsei des weiteren sieen v1, v2, ..., vn eine basisn von v wobei w1, w2, ...,wn \elememt W
-dann gibt es genau eine lieare abbildung \Phi :v--> W mit \phi (v_i)=w_i für jjedes i in \Z
+Bemerkung: sei $U, V$ und $W \mathcal{K}$-Vektoräume sowie $\Psi : U\rightarrow V , \Phi : U\rightarrow V$ lineare abbildung, dann ist auch $\Phi\dot\Psi: U\rightarrow V$ eine lineare abbildung, denn 
+$\forall u1, u2 \in U$, $\alpha1 , \alpha2 in \mathcal{K}$ 
+$\Phi\dot\Psi(\alpha_1 u_1 \alpha2 u_2)=\Phi(\Psi(\alpha_1 u_1 \alpha2 u_2))=\Phi(\Psi(\alpha_1 u_1)\Psi( \alpha2 u_2))= \alpha_1 \phi(\Psi(u1)) $
+%#missing
+S 9.6 seien $V und W \mathcal{K}$-vektorräume, wobei $1\leq q< \inf$ für $q= \dim V$ erfüllt sei des weiteren seien $v_1, v_2, ..., v_n$ eine basis von $V$ wobei $w_1, w_2, ...,w_n \eleme W
+dann gibt es genau eine lieare abbildung \Phi :v\rightarrow W mit \phi (v_i)=w_i für jjedes i in \mathbb{Z}
 diese lineare abbildung \phi erfüllt \im \Phi = \span(w_1,w_2,...,w_n).
-beweis: sei x \elem V , ==> \exist ! folge (\alpha_j)_{j=1}^k aus k mit x= \sum _{j=1}^k {\alpha_jv_j}==> (satz9.1)\phi(x) =
-\phi \sum _{j=1}^q {\alpha_jv_j}= \sum _{j=1}^q {\phi(\alpha_jv_j)}==> wenn (1)
-\Phi (x)}\sum _{j=1}^q {\phi(\alpha_jw_j)} ==> falls \phi eine lineare abbilcungmit (1) so eindeutig bestimmt
-existens: Def \phi :V-->W derart dass jedem x \in \V wie oben mit seiner Basisdarstellung zugeordnet wird: 
+beweis: sei x \elem V , \Rightarrow \exist ! folge (\alpha_j)_{j=1}^k aus k mit x= \sum _{j=1}^k {\alpha_jv_j}\Rightarrow (satz9.1)\phi(x) =
+\phi \sum _{j=1}^q {\alpha_jv_j}= \sum _{j=1}^q {\phi(\alpha_jv_j)}\Rightarrow wenn (1)
+\Phi (x)}\sum _{j=1}^q {\phi(\alpha_jw_j)} \Rightarrow falls \phi eine lineare abbilcungmit (1) so eindeutig bestimmt
+existens: Def \phi :V\rightarrowW derart dass jedem x \in \V wie oben mit seiner Basisdarstellung zugeordnet wird: 
 \Phi(x):= \sum _{j=1}^q {\phi(\alpha_jw_j)}
-Nachweis von (1): \foarll k in \Z_{1,q}: v_k=\sum _{j=1}^q \delta_{jk}v_i     (3)
-==> \forall k \in \\Z_{1,q}\phi(v_k)=\sum _{j=1}^q\delta_{jk}w_i= w_k ==> (1) erfüllt
+Nachweis von (1): \foarll k in \mathbb{Z}_{1,q}: v_k=\sum _{j=1}^q \delta_{jk}v_i     (3)
+\Rightarrow \forall k \in \\mathbb{Z}_{1,q}\phi(v_k)=\sum _{j=1}^q\delta_{jk}w_i= w_k \Rightarrow (1) erfüllt
 nnachweis der linearität von \Phi:
-seien x,y \elem  V sowie \alpha,\beta \elem \k : ==> \exist ! (\alpha_i)_{j=1}^q aus \K mit (2) ind y= \sum _{j=1}^k {\beta_jw_j} (5)
-==> \alpha x +\beta y= \alpha \sum _{j=1}^k {\alpha_jv_j} + \sum _{j=1}^k {\beta_jw_j}= \sum _{j=1}^k {\alpha \alpha_j+\beta \beat_j}= \Phi(\aölpha x+ \beta y)
+seien x,y \elem  V sowie \alpha,\beta \elem \mathcal{K} : \Rightarrow \exist ! (\alpha_i)_{j=1}^q aus \mathcal{K} mit (2) ind y= \sum _{j=1}^k {\beta_jw_j} (5)
+\Rightarrow \alpha x +\beta y= \alpha \sum _{j=1}^k {\alpha_jv_j} + \sum _{j=1}^k {\beta_jw_j}= \sum _{j=1}^k {\alpha \alpha_j+\beta \beat_j}= \Phi(\aölpha x+ \beta y)
 = \sum _{j=1}^k {\alpha \alpha_j+\beta \beat_j}w_i= 
 \alpha \sum _{j=1}^k {\alpha_jv_j+\beta \sum _{j=1}^k {\beta_jw_j}= \alpha \Phi(x)+\beta \Phi (y)00> \phi linear
 
-\foral x \in V \Phi(x):= \sum _{j=1}^q {\phi(\alpha_jw_j)} \elem \span'(w1,...,wq)==> im \pohi \leq \span'(w1,...,wq)  (6)
-sei umgekehrt w \elem  \span'(w1,...,wq) vorgegeben ==> \exist \gamma_1,...,\gamma_q \in \K: w=\sum _{j=1}^k {\gamma_jw_j}
-==> w= \sum _{j=1}^q {\beta_j\Phi(v_i)}= \phi (\sum _{j=1}^k {\beta_jv_j) \elem Im\Phi 
-==> \span'(w1,...,wq} \subseteqq \Im \Phi 
-F9.7 seien V und W \k Vr wobei 1\leqdimV<+\inf, sei r\elem \N sowie v_1,v_2,..,v_r \elem V und w_1,w_2,..,w_r \elem W
-sei vorrausgesetz dass v_1,..,v_r linear unabhängig, dann gibt es mindestens eine lineare abbildung \Phi :V--> W, mit \Phi(v_j)=W_j \forall j\elemN_{1,r}
+\foral x \in V \Phi(x):= \sum _{j=1}^q {\phi(\alpha_jw_j)} \elem \span'(w1,...,wq)\Rightarrow im \pohi \leq \span'(w1,...,wq)  (6)
+sei umgekehrt w \elem  \span'(w1,...,wq) vorgegeben \Rightarrow \exist \gamma_1,...,\gamma_q \in \mathcal{K}: w=\sum _{j=1}^k {\gamma_jw_j}
+\Rightarrow w= \sum _{j=1}^q {\beta_j\Phi(v_i)}= \phi (\sum _{j=1}^k {\beta_jv_j) \elem Im\Phi 
+\Rightarrow \span'(w1,...,wq} \subseteqq \Im \Phi 
+F9.7 seien V und W \mathcal{K} Vr wobei 1\leqdimV<+\inf, sei r\elem \mathbb{N} sowie v_1,v_2,..,v_r \elem V und w_1,w_2,..,w_r \elem W
+sei vorrausgesetz dass v_1,..,v_r linear unabhängig, dann gibt es mindestens eine lineare abbildung \Phi :V\rightarrow W, mit \Phi(v_j)=W_j \forall j\elemN_{1,r}
 beweis:  Nach Basisergänzungssatz r\leq q im Fall r=q wende s 9.6 an . im fall r<q können nach Basisergänzungssatz vektoren v_r+1,...,v_q\elem V 
 derart ergänzt werden, dass v_1,...,v_r,v_r+1,...,v_q eine basis von V ist ind wir können S 9.6 anwenden \QED
 \Bemerkungaus dem beweis von folgerung 9.7 ist ersichtlich, dass im fall dass r<q und W\neq {0_w} die lineare abbildung nicht eindeutig bestimmt ist.
 L9.8
-seien Vun d W \K vr sowie \Phi :v--> W  eine lineare abbildung, dann gilt \dim \Im \Phi\leq dim V.
+seien Vun d W \mathcal{K} vr sowie \Phi :v\rightarrow W  eine lineare abbildung, dann gilt \dim \Im \Phi\leq dim V.
 %übung Unterscheidung dimV= \inf, dim V\elem \n, dim V =0
-S9.9 seien V und W \K-Vektorräume  wobei dim V < \inf, sowie \Phi :v--> W  eine lineare abbildung dann gilt \dim (\Im \Phi\)+dann gilt \dim (\ker\Phi\)= dim V
+S9.9 seien V und W \mathcal{K}-Vektorräume  wobei dim V < \inf, sowie \Phi :v\rightarrow W  eine lineare abbildung dann gilt \dim (\Im \Phi\)+dann gilt \dim (\mathcal{K}er\Phi\)= dim V
 %beweis in Übung
-Definition:seien V und W \K-Vektorräume  sowie \Phi :v--> W eine lineare abbildung dann heißt Rang_K von \Phi .= \dim (\Im \Phi\) der Rang von \Phi 
-Satz 9.10 seien V und W \K-Vektorräume sowie \Phi :v--> W  eine lineare abbildung
-(a) falls \phi injektiv, so ist die Umkehrbildung \Phi^{-1} : \Im \Phi --> V ebenfalls linear
+Definition:seien V und W \mathcal{K}-Vektorräume  sowie \Phi :v\rightarrow W eine lineare abbildung dann heißt Rang_K von \Phi .= \dim (\Im \Phi\) der Rang von \Phi 
+Satz 9.10 seien V und W \mathcal{K}-Vektorräume sowie \Phi :v\rightarrow W  eine lineare abbildung
+(a) falls \phi injektiv, so ist die Umkehrbildung \Phi^{-1} : \Im \Phi \rightarrow V ebenfalls linear
 (b) im fall dass dim V = dim W <\inf gilt, sind folgenda aaussagen äquivalent:
   1 \phi ist bijektiv
   11 \Phi ist injektiv
   111  \phi ist surjektiv
 
 wiederholung: koordinaten abbildung siehe Algebra 1
-Bemerkung: betravchten wir die natürliche basis B:= (e^{(q)}_1,e^{(q)}_1,...,e^{(q)}_q) ) des \K^q gilt für jede wahl von x=(x_1,x_2,...,x_q)^T  
-\elem \K^q 
+Bemerkung: betravchten wir die natürliche basis B:= (e^{(q)}_1,e^{(q)}_1,...,e^{(q)}_q) ) des \mathcal{K}^q gilt für jede wahl von x=(x_1,x_2,...,x_q)^T  
+\elem \mathcal{K}^q 
 die beziehung \Omega(x) =x wegen x= \sum_{j=1}^q x_j e_j^{(q)}
-das folgende theorem ist grob gesagt die grndlage dafür, dass das rechnen in (nicht trivialen) endlich dimensionalen \K Vektorräumen auf das renchen in 
-\K^q zurückgeführt weden kann, wobei q die dimension des urbildvektorraumes der linearen abbildung darstellt.
+das folgende theorem ist grob gesagt die grndlage dafür, dass das rechnen in (nicht trivialen) endlich dimensionalen \mathcal{K} Vektorräumen auf das renchen in 
+\mathcal{K}^q zurückgeführt weden kann, wobei q die dimension des urbildvektorraumes der linearen abbildung darstellt.
 
 
 S9.11
-sein q \elem \N sowie V ein \k Vr mit dim V = q bezeichne (v_1,...,v_q) eine basis von V dann sit die koordinatenabbildung \Omega_B: V--> \K^q bezüglich der geordneten
+sein q \elem \mathbb{N} sowie V ein \mathcal{K} Vr mit dim V = q bezeichne (v_1,...,v_q) eine basis von V dann sit die koordinatenabbildung \Omega_B: V\rightarrow \mathcal{K}^q bezüglich der geordneten
 basis B ein isomorphismus insbesondere sind V und K^q
-isomorphismusdie gemäß S9.6 durch die bedingung \Phi_B (e_j^{(q)})=vj \forall j in \Z_q eeoindeutig bestimmte lineare abbildung\OPh _B: K^q--> V
+isomorphismusdie gemäß S9.6 durch die bedingung \Phi_B (e_j^{(q)})=vj \forall j in \mathbb{Z}_q eeoindeutig bestimmte lineare abbildung\OPh _B: K^q\rightarrow V
 % \Phi_B = \Omega_B^{-1}
 
 \section{beweis 9.11}
-wir zeigen zundächst, dass $\Omega_B: V \rightarrow \K^q bijektiv ist $
-\begin{item}
+wir zeigen zundächst, dass $\Omega_B: V \rightarrow \mathcal{K}^q$ bijektiv ist 
+\begin{itemize}
  \item $\Omega_B $ist surjektiv, denn : ist 
  $
  \begin{pmatrix}
@@ -181,18 +184,20 @@ wir zeigen zundächst, dass $\Omega_B: V \rightarrow \K^q bijektiv ist $
 \[ \omega_b(\mathbb{x}=
  \begin{pmatrix}
   \alpha_1\\ \vdots\\ \alpha_q
- \end{pmatrix})\]
- \item Omega_B ist injektiv, denn Seien $\mathbb{x,y}\in V$ beliebig, mit $\Omega_B(\mathbb{x})=\Omega_B(\mathbb{y})$
+ \end{pmatrix})
+ \]
+ \item $Omega_B$ ist injektiv, denn Seien $\mathbb{x,y}\in V$ beliebig, mit $\Omega_B(\mathbb{x})=\Omega_B(\mathbb{y})$
  mit $\alpha_j := (e_j^(q))^T\Omega_B(\mathbb{x}), j=1,2,..., q$, gilst also  
- \[\begin{pmatrix}
+ \[
+ \begin{pmatrix}
   \alpha_1\\ \vdots\\ \alpha_q
  \end{pmatrix}\]
 \[ =\Omega_B(\mathbb{x})=\Omega_B(\mathbb{y}
 \]
-\[==> \mathbb{x}=\sum_{j=1}^{q}\alpha_j \mathbb{v}_j= \mathbb{y}
-\] ==> Omega_B ist bijektiv
+\[\Rightarrow \mathbb{x}=\sum_{j=1}^{q}\alpha_j \mathbb{v}_j= \mathbb{y}
+\] $\Rightarrow \Omega_B$ ist bijektiv
  \item
- $\Omega_B $ ist klinear denn seien $\mathbb{x,y}\in V in \lambda, \mu \in \k$ Mit $\alpha_j := (e_j^(q))^T\Omega_B(\mathbb{x})$ und $\beta_j:= (e_j^(q))^T\Omega_B(\mathbb{y}),j=1,2,..., q$
+ $\Omega_B $ ist $\mathcal{K}$-linear denn seien $\mathbb{x,y}\in V$ und $\lambda, \mu \in \mathcal{K}$ Mit $\alpha_j := (e_j^(q))^T\Omega_B(\mathbb{x})$ und $\beta_j:= (e_j^(q))^T\Omega_B(\mathbb{y}),j=1,2,..., q$
   
   gilt, dann 
   \[\Omega_B(\mathbb{x}=
@@ -205,8 +210,9 @@ wir zeigen zundächst, dass $\Omega_B: V \rightarrow \K^q bijektiv ist $
   \beta_1\\ \vdots\\ \beta_q
  \end{pmatrix}\]
  sowie \[\mathbb{x}=\sum_{j=1}^{q}\alpha_j \mathbb{v}_j und \mathbb{y}=\sum_{j=1}^{q}\beta_j \mathbb{v}_j=\] 
- \[==> \lambdax +\my y= \mathbb{x}=\alpha \sum_{j=1}^{q}\alpha_j \mathbb{v}_j + \mathbb{y}\my\sum_{j=1}^{q}\beta_j \mathbb{v}_j
- = \sum_{j=1}^{q}(\lambda\alpha_j+\my\beta_j )\mathbb{v}_j= \omega_B \lambdax+\muy\]
+ \[
+ \Rightarrow \lambda x + \mu y= \mathbb{x}=\alpha \sum_{j=1}^{q}\alpha_j \mathbb{v}_j + \mathbb{y}\mu\sum_{j=1}^{q}\beta_j \mathbb{v}_j
+ = \sum_{j=1}^{q}(\lambda\alpha_j+\mu\beta_j )\mathbb{v}_j= \omega_B \lambda x+\mu\]
  \[=
  \begin{pmatrix}
   \lambda\alpha_1+\mu \beta_1\\ \vdots\\ \lambda\alpha_q\mu\beta_q
@@ -218,59 +224,59 @@ wir zeigen zundächst, dass $\Omega_B: V \rightarrow \K^q bijektiv ist $
   \beta_1\\ \vdots\\ \beta_q
  \end{pmatrix}
  \]
-\end{item}
-nach satz 9.6 gibt es genau dann eine lineare abbildung wenn $\Phi _B : \K^q--> V$ , it 
-\phi_B(e_j^(q))
+\end{itemize}
+nach satz 9.6 gibt es genau dann eine lineare abbildung wenn $\Phi _B : \mathcal{K}^q\rightarrow V$ , it 
+$\phi_B(e_j^(q))$
 
-#ommitted
+% #ommitted
 
 \section{lemma 9.12}
-seien $q \in \mathbb{N}$ und $V,W \mathcal{K}$-Vektorräume, wobei $\dim v=q$ gelten weiter sei $v_1,...,v_q$ eine basis vom $V $und $\Phi: V--> W$ eine lineare Abbildung, dann gelten:
+seien $q \in \mathbb{N}$ und $V,W \mathcal{K}$-Vektorräume, wobei $\dim v=q$ gelten weiter sei $v_1,...,v_q$ eine basis vom $V $und $\Phi: V\rightarrow W$ eine lineare Abbildung, dann gelten:
 \begin{enumerate}[a)]
- \item Im $\Phi = span (\Phi(v_¹),...,\phi(v_2))$ insbesondere ist $\Phi$ genau dann surjektiv wenn $\Phi(v_1) ,..., \Phi(v_q)$ ein ein erzeugendensystem von $W$ ist.
+ \item Im $\Phi = span (\Phi(v_1),...,\Phi(v_2))$ insbesondere ist $\Phi$ genau dann surjektiv wenn $\Phi(v_1) ,..., \Phi(v_q)$ ein ein erzeugendensystem von $W$ ist.
  \item $\Phi$ ist ganau dann injektiv, wenn $\Phi(v_1),..., \Phi(v_q)$ lin unabhängig sind
  \item $\Phi$ ist ganau dann bijektiv, wenn $\Phi(v_1),..., \Phi(v_q)$ eine basisi von $W$ ist
 \end{enumerate}
 
 \section{beweis(im seminar)}
 \section{satz9.13}
-seien $V,W \mathcal{K}-Vektorräume$ mit $\dim V < \inf$ dann sind $V$ und $W$ genau dann isomorph wenn $\dim V=\Dim W $gilt.
+seien $V,W \mathcal{K}$-Vektorräume mit $\dim V < \inf$ dann sind $V$ und $W$ genau dann isomorph wenn $\dim V=\dim W $gilt.
 \subsection{beweis im seminar, 5pkt}
 \subsection{lemma 9.14}
-seine $p,q \in \mathbb{N}$ sowie $\phi : \k^q-->\K^p$ eine lineare abbildung, dann gibt es genau dann eine Matrix $\mathbb{A} \in \K^{p\times q}$ mit $\Phi(x)=Ax$
-für alle $x \in \k^q$, nämlich $A= (\Phi(e_1^(q)),...,\Phi(e_q^(q)))$
+seine $p,q \in \mathbb{N}$ sowie $\phi : \mathcal{K}^q\rightarrow\mathcal{K}^p$ eine lineare abbildung, dann gibt es genau dann eine Matrix $\mathbb{A} \in \mathcal{K}^{p\times q}$ mit $\Phi(x)=Ax$
+für alle $x \in \mathcal{K}^q$, nämlich $A= (\Phi(e_1^(q)),...,\Phi(e_q^(q)))$
 \subsection{beweis}
-Sei $B:= (\Phi(e_1^(q)),...,\Phi(e_q^(q)))$. nach Bsp ist $\Psi:\K^q-->\K^p$ gemäß $\Psi(x):= Bx$
+Sei $B:= (\Phi(e_1^(q)),...,\Phi(e_q^(q)))$. nach Bsp ist $\Psi:\mathcal{K}^q\rightarrow\mathcal{K}^p$ gemäß $\Psi(x):= Bx$
 eine lin. abb. für alle $j=1,2,...,q$ gilt $\Phi (e_j^(q))= B(e_j^(q))= \Psi(e_j^(q))$
-==>(s9.6) $\Phi=\Psi$
-==> $A=B$ ist eine matrix aus $\K^{p\times q}$ mit 
+$\Rightarrow$(s9.6) $\Phi=\Psi$
+$\Rightarrow$ $A=B$ ist eine matrix aus $\mathcal{K}^{p\times q}$ mit 
 1
-für alle $x \in \K^q$
-sei nun $A \in \K^{p \times q}$  beliebig mit (1)für alle $x in \K^q$
-\[==> A=A*I_q=A(e_1^(q)),...,(e_q^(q))=(Ae_1^(q)),...,A(e_q^(q))\]
+für alle $x \in \mathcal{K}^q$
+sei nun $A \in \mathcal{K}^{p \times q}$  beliebig mit (1)für alle $x in \mathcal{K}^q$
+\[\Rightarrow A=A*I_q=A(e_1^(q)),...,(e_q^(q))=(Ae_1^(q)),...,A(e_q^(q))\]
 =(1)
 \[(\Phi e_1^(q)),...,\phi(e_q^(q))\]
 qed
-Im fall von lemma 9.14 ist die Unterscheidungvon ,lin abb $ \phi : \k^q-->\K^p $und matritzen aus \K^p\times q also nicht wesentlich . eine solchen 
+Im fall von lemma 9.14 ist die Unterscheidungvon ,lin abb $ \phi : \mathcal{K}^q\rightarrow\mathcal{K}^p $und matritzen aus $\mathcal{K}^p\times q$ also nicht wesentlich . eine solchen 
 zusammenhang zwischen linearen abbildungen und matrizen gibt es jedoch nuc in den Standardräumen .
 
 \section{Satz9.15}
-seinen $  p,q \in \mathbb{N}$ sowie $V$ und $W$ $\mathcal{K}$ VR mit $\dim V =q $und $\dim W =p $ weiter sie $B= (v_1,...,v_q)$
+seinen $  p,q \in \mathbb{N}$ sowie $V$ und $W$ $\mathcal{K}$ Vektorraum mit $\dim V =q $und $\dim W =p $ weiter sie $B= (v_1,...,v_q)$
 eine  (geordnete) basis von $V$ ist und $C=(w_1,...,w_p)$ eine (geordnete) basis von $W$ ist 
-sowie $\Phi: V--> W$ eine lineare abbildung
+sowie $\Phi: V\rightarrow W$ eine lineare abbildung
 a)
-es gibt eine matrix $A= (\alpha_{jk})_{j=1,...,q\\ k=1,...,p} \in \K^{p\times q}$ mit 
+es gibt eine matrix $A= (\alpha_{jk})_{j=1,...,q\\ k=1,...,p} \in \mathcal{K}^{p\times q}$ mit 
 $\phi (v_k)= \sum_j=1^p{\alpha_{jk}w_j}$ für alle $k=1,...,q$, 
-nämlich $A = (\omega_C(\Phi(v_1),...,\omega_C(\Phi(v_q))$ wobei  $\Omega_C : W--> \k^p$ die koordinatenabbildung bezüglich der basis $C$ in $W$ ist
+nämlich $A = (\omega_C(\Phi(v_1),...,\omega_C(\Phi(v_q))$ wobei  $\Omega_C : W\rightarrow \mathcal{K}^p$ die koordinatenabbildung bezüglich der basis $C$ in $W$ ist
 b)
-Es gibt genau eine matrix $\tilde{A} \in \K^{p\times q}$ mit 
-$\Omega_C(\Phi(v))=\tilde{A}_\Omega_B (v)$ für alle $v in V$ (3)
-nämlich \tilde{ A}=A
+Es gibt genau eine matrix $\tilde{A} \in \mathcal{K}^{p\times q}$ mit 
+$\Omega_C(\Phi(v))=\tilde{A}_{\Omega_B} (v)$ für alle $v in V$ (3)
+nämlich $\tilde{ A}=A$
 beweis:
 a)
 für jedes $k=1,...,q$ besitzt der Vektor $\Phi (v_k) $aus $W$ gemäß lemma 3.6 eine eindeutige Darstellung $\Phi (v_k)= \lambda^{(k)}_1w_1,...,\lambda^{(k)}_p w_p$
 bezüglich der Basis $C$ in $W$ Mit $\lambda_{jk}:= \lambda^{(k)}_j, j=1,...,q$ folgt (1)
-==> $A \in \K^{p\times q}$ mit (1) existiert und ist eindeutig bestimmt.
+$\Rightarrow A \in \mathcal{K}^{p\times q}$ mit (1) existiert und ist eindeutig bestimmt.
 Für alle $k=1,...,q $folgt ais (1) 
 \[\begin{pmatrix}
  \alpha_{1k}\\ \alpha_{2k}\\ \vdots \\ \alpha_{pk}
@@ -285,19 +291,19 @@ b) sei v in V beliebig Mit $\beta_k:= (e^q_k)^T \Omega_B(v) k=1,...,q $ist
  \beta_1\\ \vdots \\ \beta_q
 \end{pmatrix}
 \]
-\[= \omega_B(v) dann haben wir v= \sum_j=1^p{\beta_{k}v_k} und wegen der linearität von \Phi und (1) somit 
-\Phi(v)=\sum_j=1^p{\beta_{k}\Phi(v_k)}
+$= \omega_B(v)$ dann haben wir $v= \sum_j=1^p{\beta_{k}v_k}$ und wegen der linearität von $\Phi$ und (1) somit 
+$\Phi(v)=\sum_j=1^p{\beta_{k}\Phi(v_k)}
 = (1)
 \sum_j=1^p{\beta_{k}\sum_j=1^p{\alpha_{jk}(w_j)}}
 =
 \sum_j=1^p{\beta_{k}(\sum_j=1^p{\alpha_{jk}\beta_k)w_j}}
-\]
-==> 
+$
+$\Rightarrow $
 \[\Omega_C(\phi(v))=
 \begin{pmatrix}
- \sum_j=1^p{\alpha_{1k}\beta_k\\
+ \sum_{j=1}^p\alpha_{1k}\beta_k\\
  \vdots\\
-  \sum_j=1^p{\alpha_{1k}\beta_k\\
+  \sum_{j=1}^p\alpha_{1k}\beta_k\\
 \end{pmatrix}
 =\begin{pmatrix}
   \alpha_{11}& \hdots & \alpha_{1q}\\
@@ -310,9 +316,9 @@ b) sei v in V beliebig Mit $\beta_k:= (e^q_k)^T \Omega_B(v) k=1,...,q $ist
  \beta_q\\
 \end{pmatrix}
 = A\Omega_B(v).
-\]==> $\tilde{A}:= A$ erfüllt (3) sei nun \tilde${ A} \in \K^{p\times q}$ beliebig mit (3) 
+\]$\Rightarrow \tilde{A}:= A$ erfüllt (3) sei nun $\tilde{ A} \in \mathcal{K}^{p\times q}$ beliebig mit (3) 
 für alle $k=1,...,q$ ist wegen $v_k= \sum \delta_{jk}v_k= 0v_1+...+1v_k+...+0v_q$
-zunächst \[\omega_B (v_k)=
+zunächst \[\omega_B (v_k)= 
 \begin{pmatrix}
  0\\
  \vdots\\
@@ -322,12 +328,12 @@ zunächst \[\omega_B (v_k)=
 \end{pmatrix}
 = e_k^(q)\] und wegen (3) folglich 
 \[\Omega_C(\phi(v_K))= \tilde{A} \Omega_B(v_k)=\tilde{A}e_k^(q)= kte spalte vom \tilde{A} \](4)
-==>
+$\Rightarrow$\\
 \[\tilde{A}=\tilde{A}I_q =\tilde{A}(e_1^(q)),...,(e_q^(q))=(\tilde{A}e_1^(q)),...,\tilde{A}(e_q^(q))= (\Phi e_1^(q)),...,\phi(e_q^(q))=A
 \]
 \section{bemerkung}
 es liegen die situation von satz 9.15 vor 
-dann heißt die durch (2) gegebene Matrix $A \in  \K^{p\times q} $die darstellungsmatrix der lin abb $\Phi :V-->W$ bzw der geordneten basen $B$ und $C$
+dann heißt die durch (2) gegebene Matrix $A \in  \mathcal{K}^{p\times q} $die darstellungsmatrix der lin abb $\Phi :V\rightarrow W$ bzw der geordneten basen $B$ und $C$
 für $A$ wird dann $\Phi _{B,C}$ geschrieben
 Kennt man die matrix $\Phi _{B,C}$ so lässt sich gemäß (3) dann $\Phi (v) $für jedes $v \in B $ wie folgt berechnen:
 ist $v=\sum \beta_kv_k$ die darstellung vom $v$ bzw $B$ so bildet man 
@@ -335,27 +341,27 @@ $(\beta_1,..., \beta_q) $ und erhält $\Phi(v)$ gemäß $\sum \gamma_jw_j$.
 % 12.04.2017
 $\Phi : V \rightarrow W, B:= (v_1,...,v_q) , C=(w_1,...,w_p)$
 $\Omega_C[\Phi(v)]=\mathbb{\Phi}_{B,C}\Omega_B(v) \quad \forall v \\in V$
-betrachten $M_\mathbb{\Phi}_{B,C}: \mathcal{K}^q \rightarrow \mathcal{K}^p$ gemäß $M_\mathbb{\Phi}_{B,C}(x)=\mathbb{\Phi}_{B,C}(x)$
+betrachten $M_{\mathbb{\Phi}_{B,C}}: \mathcal{K}^q \rightarrow \mathcal{K}^p$ gemäß $M_{\mathbb{\Phi}_{B,C}}(x)=\mathbb{\Phi}_{B,C}(x)$
 Diagramm:
 q:= dim V  
 p:= dim W
-\begin{matrix}
+$\begin{matrix}
  V & \rightarrow^\Phi & W\\
  \Omega_B \downarrow & & \uparrow \Omega_C\\
- \mathcal{K}^q & \rightarrow^{M_\mathbb{\Phi}_{B,C}} & \mathcal{q}\\
+ \mathcal{K}^q & \rightarrow^{M_{\mathbb{\Phi}_{B,C}}} & \mathcal{q}\\
 \end{matrix}
-
-B.: Im spezialfall V = K^q und W= K^p sowie B:= (e^{(q)}_1,e^{(q)}_1,...,e^{(q)}_q) und C:= (e^{(p)}_1,e^{(p)}_1,...,e^{(p)}_p) 
-ist \mathbb{\Phi}_{B,C} gerade die in 9.14 beschriebene Matrix A welche $\Phi(x)=A(x)$ $\forall x \in \mathcal{K}^q$ erfüllt (vgl bemerkung vor theorem 9.10)
+$
+B.: Im spezialfall $V = K^q$ und$ W= K^p$ sowie$ B:= (e^{(q)}_1,e^{(q)}_1,...,e^{(q)}_q)$ und$ C:= (e^{(p)}_1,e^{(p)}_1,...,e^{(p)}_p)$ 
+ist$ \mathbb{\Phi}_{B,C} $gerade die in 9.14 beschriebene Matrix A welche $\Phi(x)=A(x)$ $\forall x \in \mathcal{K}^q$ erfüllt (vgl bemerkung vor theorem 9.10)
 \begin{lemma}
- seine $p,q n \in \mathbb{N}$ sowie V und W K VR mit $ \dim V=q $ und $\dim W= p$ des weiteren sei B:=(v_1,...,v_q) eine basisi von V und C:= (w_1,,..,w_p) eine basis von W Für jedes $A\in \mathbb{C}$ gibt es genau dann eine lineare abbildung $\Phi:v \rightarrow W$ mit $\mathbb{\Phi}_{B,C}=A$
+ seine $p,q n \in \mathbb{N}$ sowie $V$ und $W \mathcal{K}$-Vektorraum mit $ \dim V=q $ und $\dim W= p$ des weiteren sei $B:=(v_1,...,v_q)$ eine basisi von $V$ und $C:= (w_1,,..,w_p)$ eine basis von $W$ Für jedes $A\in \mathbb{C}$ gibt es genau dann eine lineare abbildung $\Phi:v \rightarrow W$ mit $\mathbb{\Phi}_{B,C}=A$
  
 \end{lemma}
 \begin{beweis}
- sei $\Phi: V \rightarrow W$ gemäß $\Phi(v):= \sum_{j=1}^p (e^{(p)}_j)^T A \Omega_B(v) w_j $ (1) definiert ==> 
+ sei $\Phi: V \rightarrow W$ gemäß $\Phi(v):= \sum_{j=1}^p (e^{(p)}_j)^T A \Omega_B(v) w_j $ (1) definiert $\Rightarrow$ 
  $\forall v,v' \in V: \Phi(v +v')=^(1) \sum_{j=1}^p (e^{(p)}_j)^T A \Omega_B(v+v') w_j = ...= \Phi(v)+ \Phi(v');$
  $\forall \alpha \in K : \Phi (\alpha v) =^(1)  \sum_{j=1}^p (e^{(p)}_j)^T A \Omega_B(\alpha v+) w_j=\alpha \Phi (v)$
- ==> $\Phi $ linear
+ $\Rightarrow \Phi $ linear
  $\forall v \in V \Omega_C[\Phi(v)]=^(1) 
  \begin{pmatrix}
  (e^{(q)}_1)^T A \Omega_B(v)\\
@@ -369,59 +375,68 @@ ist \mathbb{\Phi}_{B,C} gerade die in 9.14 beschriebene Matrix A welche $\Phi(x)
  e^{(q)}_1)^T A 
  \end{pmatrix}
  A \Omega_B(v)
- = I_p A \Omega_B(v) ==> ^{thm 9.15} \mathbb{\Phi}_{B,C}$
- ==> existent
+ = I_p A \Omega_B(v) \Rightarrow ^{thm 9.15} \mathbb{\Phi}_{B,C}$
+$ \Rightarrow$ existent
  eindeutigkeitsnachweis:
  sei $\Psi: V\rightarrow W$ eine beliebige lineare abbildung mit $\mathbb{\Psi}_{B,C}=A$
- $ \forall k in \Z_{1...q}: \Omega_C[\Phi(v_k)]= \mathbb{\Psi}_{B,C}\omega_B(v)= A e_k^{(q)}
+ $ \forall k in \mathbb{Z}_{1...q}: \Omega_C[\Phi(v_k)]= \mathbb{\Psi}_{B,C}\omega_B(v)= A e_k^{(q)}
 =\mathbb{\Phi}_{B,C}e_k^{(q)}=\mathbb{\Phi}_{B,C}\Omega_B(v_k)=^(S9.15) \Omega_C(\Phi(v_k))
 $
-==> \forall k in \Z_{1...q} \Psi(v_k)=\Phi(v_k)
-==>^(9.6) \Phi=\Psi
+$\Rightarrow \forall k \in \mathbb{Z}_{1...q} \Psi(v_k)=\Phi(v_k)$\\
+$\Rightarrow^(9.6) \Phi=\Psi$
 QeD
 \end{beweis}
-\begin{Satz9.17}
- siein V und W k VR dann ist die menke HOM_K (V,W) aller K homomorphisen von V unc W ein interraum des K VR abb(v,W) aller abbildungen von V nach W
- beweis : übung
- V* := HOM_K(V,W) neannt werden nt man bektorraum vn v dessen elemente linearformen von V gen
-\end{Satz}
-\begin{satz 9.18}
- seien $p,q in \mathbb{N} sowie V und W K VR $ mit $dim V=Q$ und dim W=p daes weiteren seienB:=(v_1,...,v_q) eine basisi von V und C:= (w_1,,..,w_p) eine basis von W dann ist \mathcal{M}_{B,C}: Hom_K(V,W) \rightarrow \k^pxq gemäß \Phi \rightarrow \mathbb{\Phi}_{B,C} ein isomorphismusv von K VRäumen
- beweis übung
-\end{satz 9.18}
 \begin{satz}
- seien $r,p,q in \mathbb{N} $ sowie U,V,W KVR mit dimu=r, dim V=q, dimW=p des weiteren seien B_V:=(v_1,...,v_q) eine basisi von V und B_W:= (w_1,,..,w_p) eine basis von W weiterhin seine  \Psi :U-->V \Phi: V--> W lineare abbildung dann ist  \Chi:=\Phi ° \Psi eine lineare abb mit darstellungsmatrix \mathbb{\Chi}_{B_U,B_W} die gleichung \mathbb{\Chi}_{B_U,B_W} = \mathbb{\Phi}_{B_U,B_W}\dotfill \mathbb{\Psi}_{B_W,B_V}
+ %9.17
+\end{satz}
+
+ siein $V$ und $W k$ Vektorraum dann ist die menke $HOM_K (V,W)$ aller $K$ homomorphisen von $V $unc $W$ ein interraum des $K$ Vektorraum $abb(v,W)$ aller abbildungen von $V$ nach $W$
+ beweis : übung
+ $V* := HOM_K(V,W)$ neannt werden nt man bektorraum vn v dessen elemente linearformen von V gen
+
+\begin{satz}
+%9.18
+ seien $p,q in \mathbb{N} sowie V und W K Vektorraum $ mit $dim V=Q$ und $dim W=p$ daes weiteren seien $B:=(v_1,...,v_q)$ eine basisi von $V$ und $C:= (w_1,,..,w_p)$ eine basis von $W$ dann ist $\mathcal{M}_{B,C}: Hom_K(V,W) \rightarrow \mathcal{K}^pxq$ gemäß $\Phi \rightarrow \mathbb{\Phi}_{B,C}$ ein isomorp hismusv von K Vektorraumäumen
+ beweis übung
+\end{satz}
+\begin{satz}
+ seien $r,p,q in \mathbb{N} $ sowie $U,V,W K$-Vektorraum mit $\dim U=r$, $\dim V=q$, $\dim W=p$ des weiteren seien $B_V:=(v_1,...,v_q)$ eine basis von $V$ und $B_W:= (w_1,,..,w_p)$ eine basis von $W$ weiterhin seine  $\Psi :U \rightarrow V \Phi: V \rightarrow W$ lineare abbildung dann ist  $\chi:=\Phi \circ \Psi$ eine lineare abb mit darstellungsmatrix $\mathbb{\chi}_{B_U,B_W}$ die gleichung $\mathbb{\chi}_{B_U,B_W} = \mathbb{\Phi}_{B_U,B_W}\dotfill \mathbb{\Psi}_{B_W,B_V}$
  
 \end{satz}
 \begin{beweis}
- nach bem vor 9.6 ist \chi neine lineare abb nach 9.15 \Omega_B_W[\Phi(v)] = \mathbb{\Phi}_{B_U,B_W} \Omega_B_v(v) \forall v \in V (1)
- \forall l \in \mathbb{Z}_{1,..,r}: \Psi(v_l) \in V
- ==> 
- \omega_B_W[\Chi(u_l)]= \Omega_B_W[\Phi(\psi(v_l))]= \mathbb{\Phi}_{B_V,B_W}\mathbb{\Psi}_{B_U,B_V} e^{(r)}_l \forall l \in \mathbb{Z}_{1,l}
- #omitted
+ nach bem vor 9.6 ist$ \chi$ neine lineare abb nach 9.15 $\Omega_{B_W(\Phi(v))} = \mathbb{\Phi}_{B_U,B_W} \Omega_{B_V(v)} \forall v \in V$ (1)
+ $\forall l \in \mathbb{Z}_{1,..,r}: \Psi(v_l) \in V$\\
+$ \Rightarrow$ 
+ $\omega_{B_W[\chi(u_l)]}= \Omega_{B_W[\Phi(\psi(v_l))]}= \mathbb{\Phi}_{B_V,B_W}\mathbb{\Psi}_{B_U,B_V} e^{(r)}_l \forall l \in \mathbb{Z}_{1,l}
+ (3) \chi_{B_U,B_W}=\chi_{B_U,B_W} I_r= \chi_{B_U,B_W} (e^{(r)}_1,...,e^{(r)}_r)= (\chi_{B_U,B_W}e^{(r)}_1,...,\chi_{B_U,B_W}e^{(r)}_r)
+ (\mathbb{\Phi}_{B_V,B_W}\mathbb{\Psi}_{B_U,B_V} e^{(r)}_1,..,\mathbb{\Phi}_{B_V,B_W}\mathbb{\Psi}_{B_U,B_V} e^{(r)}_r)
+ =\mathbb{\Phi}_{B_V,B_W}\mathbb{\Psi}_{B_U,B_V}e^{(r)}_1,...,e^{(r)}_r)=\mathbb{\Phi}_{B_V,B_W}\mathbb{\Psi}_{B_U,B_V}
+ $QED
+ 
  
 \end{beweis}
+\[
 \begin{matrix}
  U &  & rightarrow^{\Phi=\Psi}& & W\\
  &\searrow_\psi & &\nearrow_\psi&\\
  &&V & &\\
- \Omega_B_V\downarrow & & \downarrow\omega_B_V & & uparrow \omega^{-1}_B_W\\
+ \Omega_{B_V}\downarrow & & \downarrow\omega_{B_V} & & uparrow \omega^{-1}_{B_W}\\
  && K^q&&\\
  & &\nearrow&& \searrow
- \K^r rightarrow\k^p
+ \mathcal{K}^r rightarrow\mathcal{K}^p
  
 \end{matrix}
+\]
 \begin{lemma}
- seine q in N sowie v ein KVR mit dim V=q des weiteren seien B:=(v_1,...,v_q) und B':=(v'_1,...,v'_q) basen von V 
- weiterhin sei \Phi  eine lineare abbildung . dann ist \phi genau dann bijektiv, wenn \mathbb{\Phi}_ {B,B'} invertierbar ist. in diesem fall ist 
- (\mathbb{\Phi}_ {B,B'})^{-1} gerade die darstellungsmatrix der (gemäß s 9.10) abbildung \Phi{-1} bezüglich der basis B und B'
+ seine $q \in N$ sowie $V$ ein $K$-Vektorraum mit $dim V=q$ des weiteren seien $B:=(v_1,...,v_q) $ und $B':=(v'_1,...,v'_q)$ basen von $V$ 
+ weiterhin sei $\Phi$  eine lineare abbildung . dann ist $\phi$ genau dann bijektiv, wenn $\mathbb{\Phi}_ {B,B'}$ invertierbar ist. in diesem fall ist 
+ $(\mathbb{\Phi}_ {B,B'})^{-1}$ gerade die darstellungsmatrix der (gemäß s 9.10) abbildung $\Phi{-1}$ bezüglich der basis $B$ und$ B'$
 \end{lemma}
 beweis : übungsaufgabe
 \begin{lemma}
 %9.21
-seine q \in \N udnV einKVR mit $\dim V=q$ Des Weiteren seien B':=(v'_1,...,v'_q) eine basisi von V sowie $v_1,...,v_q \in V$
-bezeichne \Gamma:=(\gammma_{jk})_{j,k=1,..,q} die eindeutig besti
- 
+seine $q \in \mathbb{N}$ und $V$ ein$K$-Vektorraum mit $\dim V=q$ Des Weiteren seien $B':=(v'_1,...,v'_q)$ eine basis von $V$ sowie $v_1,...,v_q \in V$
+bezeichne $\Gamma:=(\gamma_{jk})_{j,k=1,..,q}$ die eindeutig bestimmte kompexe $qxq$ matrix, für die $v_k=\sum_{j=1}^q\gamma_{jk} v'j$ für jedes $k \in \mathbb{Z}_{1,q}$ gilt dann ist  $B:=(v_1,...,v_q)$ eine basis von $V$ wenn $\Gamma$ invertierbar ist.
 \end{lemma}
 
 

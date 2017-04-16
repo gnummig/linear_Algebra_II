@@ -1,0 +1,7 @@
+# generated latex files:
+.aux
+.backup
+.pdf
+.log
+# the script since it is not yet nice
+script.tex

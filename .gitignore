@@ -4,4 +4,5 @@
 *.pdf
 *.log
 # the script since it is not yet nice
+templ.tex
 script.tex

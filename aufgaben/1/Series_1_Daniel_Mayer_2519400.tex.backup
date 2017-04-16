@@ -1,0 +1,522 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}   % for number sets
+\usepackage{xfrac} % for nicefrac
+
+
+\newcommand{\RN}[1]{%
+  \textup{\uppercase\expandafter{\romannumeral#1}}%
+}
+%opening
+\title{}
+\author{}
+
+\begin{document}
+
+\maketitle
+
+
+
+\section{determine the solution set of the following systems of equations}
+\subsection*{a1}
+solve for real numbers:
+\[
+\begin{bmatrix}
+2 & 3  & 1  & 2 \\
+4 & 3  & 1  & 1  \\
+5 & 11 & 3  & 2  \\
+2 & 5  & 1  & 1  \\
+1 & -7 & -1 & 2  
+\end{bmatrix}
+\times
+\begin{bmatrix}
+ x_1\\x_2\\x_3\\x_4
+\end{bmatrix}
+=
+\begin{bmatrix}
+ 4 \\ 5\\2 \\ 1 \\ 7
+\end{bmatrix}
+\]
+solution:\\
+since there are 5 equations for 4 variables, we do not expect to necessarily find a solution, still we can proceed solving the system of the first four equations and checking whether the solution is valid for the last equation.\\
+\[
+\begin{bmatrix}
+2 & 3  & 1 & 2 & \vline & 4\\
+4 & 3  & 1 & 1 & \vline & 5\\
+5 & 11 & 3 & 2 & \vline & 2\\
+2 & 5  & 1 & 1 & \vline & 1\\
+\end{bmatrix}
+\quad
+\begin{matrix}
+ \RN{1}\\ \RN{2}\\ \RN{3}\\ \RN{4}
+\end{matrix}
+\]
+we can reduce the problem to solving for $x_2,x_3,and x_4$
+\[
+\begin{bmatrix}
+ 3 & 1 & 3 & \vline & 3\\
+ 7 & 1 & -6& \vline & -16\\
+ 2 & 0 & -1 & \vline & -3
+\end{bmatrix}
+\quad
+\begin{matrix}
+ \RN{5} = 2\times \RN{1}-\RN{2} \\ \RN{6}=2 \times \RN{3}-5 \times \RN{1} \\\RN{7}= \RN{4}-\RN{1}
+\end{matrix}
+\]
+which is the same as solving:\\
+\[
+\begin{bmatrix}
+ 4 & 39 & \vline & 69\\
+ 2 & 9 & \vline & 15
+\end{bmatrix}
+\quad
+\begin{matrix}
+ \RN{8}=7\times \RN{5}-3\times \RN{6} \\\RN{9}= 2\times \RN{5} - 3\times \RN{7}
+\end{matrix}
+\]
+from which it is simple to find
+\[
+x_4 = \frac{39}{21}= \frac{13}{7}
+\]
+therefore using $\RN{9}$
+\[
+x_3= \frac{105-117}{14}= -\frac{13}{14}
+\]
+using $\RN{7}$ we find:
+\[
+x_2 = \frac{13-21}{14}= -\frac{4}{7}
+\]
+and inserting in $\RN{1}$ we find:
+
+\[
+x_1= \frac{12}{14} +\frac{13}{28} -\frac{26}{14}+2= \frac{24+13-52+54}{28}=\frac{39}{28}
+\]
+now testing this in the last equation of the exercise, we get:
+\[
+\frac{39}{28} + α 4 +\frac{13}{14} +\frac{26}{7}=\frac{39+102+26+104}{28}= \frac{271}{28} \neq 7
+\]
+Hence the solution of the reduced system of equations does not solve the entire system and the solution set is 
+\[
+S = \emptyset
+\]
+\subsection*{a2}
+\[
+\begin{bmatrix}
+  9 & -3 & 5 & 6 \\
+  6 & -2 & 3 & 1\\
+  3 & -1 & 3 & 14
+\end{bmatrix}
+\times
+\begin{bmatrix}
+ x_1\\x_2\\x_3\\x_4
+\end{bmatrix}
+=
+\begin{bmatrix}
+ 4 \\ 5\\-8
+\end{bmatrix}
+\]
+
+since there are 3 constrains in four dimensions, we expect the solution set to be at least a hyperplane of dimension 1
+lets set $x_4=a \in \mathbb{R}$
+\[
+\begin{bmatrix}
+  9 & -3 & 5 & 6  &\vline  & 4 \\
+  6 & -2 & 3 & 1  &\vline  & 5 \\
+  3 & -1 & 3 & 14 &\vline  & -8\\
+  0 &  0 & 0 & 1  &\vline  & a
+\end{bmatrix}
+\begin{matrix}
+ \RN{1}\\ \RN{2}\\ \RN{3}\\ \RN{4}\\
+\end{matrix}
+\]
+\[\begin{bmatrix}
+  9 & -3 & 5 & 6  &\vline  & 4 \\
+  0 & 0 & -4 & -36  &\vline  & 28\\
+  0 & 0 & -3 & -27 &\vline  & 21\\
+  0 &  0 & 0 & 1  &\vline  & a
+\end{bmatrix}
+\begin{matrix}
+ \RN{1}\\ \RN{5}= \RN{1}-3\times \RN{3}\\ \RN{6}=\RN{2}-2\times \RN{3}\\ \RN{4}\\
+\end{matrix}
+\]
+\[\begin{bmatrix}
+  9 & -3 & 5 & 6  &\vline  & 4   \\
+  0 & 0 & -4 & -36  &\vline  & 28\\
+  0 & 0 & 1 & 0 &\vline  & -7-9a \\
+  0 &  0 & 0 & 1  &\vline  & a
+\end{bmatrix}
+\begin{matrix}
+ \\ \\ \RN{7}=-\frac{1}{3} \RN{6}-7\times \RN{4} \\ \\
+\end{matrix}
+\]
+since the second row does not depend depend on $x_2$ we can choose $x_2= b \in \mathbb{R} $
+\[\begin{bmatrix}
+  9 & -3 & 5 & 6  &  \vline  & 4   \\
+  0 & 1 & 0 & 0  &   \vline  & b\\
+  0 & 0 & 1 & 0 &    \vline  & -7-9a  \\
+  0 &  0 & 0 & 1  &   \vline  & a
+\end{bmatrix}
+\begin{matrix}
+ \\ \RN{8}=-\frac{1}{4} \RN{5}-9\times \RN{4}\\ \RN{6}=\RN{2}-2\times \RN{3}\\ \RN{4}\\
+\end{matrix}
+\]
+which leaves us with 
+\[\begin{bmatrix}
+  1 & 0 & 0 & 0  &  \vline  & \frac{13+13a +b}{3}  \\
+  0 & 1 & 0 & 0  &   \vline  & b\\
+  0 & 0 & 1 & 0 &    \vline  & -7-9a  \\
+  0 &  0 & 0 & 1  &   \vline  & a
+\end{bmatrix}
+\]
+so the solution set is of the form 
+\[
+S=
+\begin{bmatrix}
+ \sfrac{13}{3} \\ 0\\-7\\ 0\\
+\end{bmatrix}
++a\begin{bmatrix}
+  \sfrac{13}{3} \\0\\-9\\1
+ \end{bmatrix}
++b\begin{bmatrix}
+   \sfrac{1}{3} \\ 1\\0\\0
+  \end{bmatrix}  
+  a,b \in \mathbb{R}
+\]
+\subsection*{b}
+solve for rational numbers:
+\[
+\begin{bmatrix}
+ 24 & 14 & 30 & 40 & 41 & \vline & 28\\
+ 36 & 21 & 45 & 61 & 62 & \vline & 43\\
+ 48 & 28 & 60 & 82 & 83 & \vline & 58\\
+ 60 & 35 & 75 & 99 & 102 &\vline & 69\\
+\end{bmatrix}
+\]
+choose $x_5=a \in \mathbb{Q}$
+\[
+\begin{bmatrix}
+ 24 & 14 & 30 & 40 & 41 & \vline & 28\\
+ 36 & 21 & 45 & 61 & 62 & \vline & 43\\
+ 48 & 28 & 60 & 82 & 83 & \vline & 58\\
+ 60 & 35 & 75 & 99 & 102 &\vline & 69\\
+ 0 &  0  & 0  & 0  &   1 & \vline & a\\
+\end{bmatrix}
+\]
+\[
+\begin{bmatrix}
+ 24 & 14 & 30 & 40 & 0 & \vline & 28-41a\\
+ 36 & 21 & 45 & 61 & 0 & \vline & 43-62a\\
+ 48 & 28 & 60 & 82 & 0 & \vline & 58-83a\\
+ 60 & 35 & 75 & 99 & 0 &\vline & 69-102a\\
+ 0 &  0  & 0  & 0  &   1 & \vline & a\\
+\end{bmatrix}
+\]
+\[
+\begin{bmatrix}
+ 24 & 14 & 30 & 40 & 0 & \vline & 28-41a\\
+ 36 & 21 & 45 & 61 & 0 & \vline & 43-62a\\
+ 48 & 28 & 60 & 82 & 0 & \vline & 58-83a\\
+ 0 & 0 & 0 & -2 & 0 &\vline & 2(69-102a)-5(28-41a)\\
+ 0 &  0  & 0  & 0  &   1 & \vline & a\\
+\end{bmatrix}
+\]
+\[
+\begin{bmatrix}
+ 24 & 14 & 30 & 40 & 0 & \vline & 28-41a\\
+ 36 & 21 & 45 & 61 & 0 & \vline & 43-62a\\
+ 48 & 28 & 60 & 82 & 0 & \vline & 58-83a\\
+ 0 & 0   & 0  & 1  & 0 & \vline & 1\\
+ 0 &  0  & 0  & 0  & 1 & \vline & a\\
+\end{bmatrix}
+\]
+\[
+\begin{bmatrix}
+ 24 & 14 & 30 & 0  & 0 & \vline & 28-40-41a\\
+ 36 & 21 & 45 & 0  & 0 & \vline & 43-61-62a\\
+ 48 & 28 & 60 & 0  & 0 & \vline & 58-82-83a\\
+ 0 & 0   & 0  & 1  & 0 & \vline & 1\\
+ 0 &  0  & 0  & 0  & 1 & \vline & a\\
+\end{bmatrix}
+\]
+\[
+\begin{bmatrix}
+ 24 & 14 & 30 & 0  & 0 & \vline & 12-41a\\
+ 36 & 21 & 45 & 0  & 0 & \vline & 18-62a\\
+ 48 & 28 & 60 & 0  & 0 & \vline & 24-83a\\
+ 0 & 0   & 0  & 1  & 0 & \vline & 1\\
+ 0 &  0  & 0  & 0  & 1 & \vline & a\\
+\end{bmatrix}
+\]
+\[
+\begin{bmatrix}
+ 24 & 14 & 30 & 0  & 0 & \vline & 12-41a\\
+ 36 & 21 & 45 & 0  & 0 & \vline & 18-62a\\
+ 0  & 0  & 0  & 0  & 0 & \vline & 24-24+82a-83a\\
+ 0 & 0   & 0  & 1  & 0 & \vline & 1\\
+ 0 &  0  & 0  & 0  & 1 & \vline & a\\
+\end{bmatrix}
+\] 
+\[
+\begin{bmatrix}
+ 24 & 14 & 30 & 0  & 0 & \vline & 12-41a\\
+ 36 & 21 & 45 & 0  & 0 & \vline & 18-62a\\
+ 0  & 0  & 0  & 0  & 0 & \vline & a\\
+ 0 & 0   & 0  & 1  & 0 & \vline & 1 \\
+ 0 &  0  & 0  & 0  & 1 & \vline & a \\
+\end{bmatrix}
+\]
+we follow that $a=0$ and see that the second row is a multiple of the first, hence choose $x_3=b \in \mathbb{Q} and x_2=c \in \mathbb{Q}$
+\[
+\begin{bmatrix}
+ 12 & 0 &  & 0  & 0 & \vline & 34 -15b -7c\\
+ 0  & 1  & 0  & 0  & 0 & \vline & c\\
+ 0  & 0  & 1  & 0  & 0 & \vline & b \\
+ 0 & 0   & 0  & 1  & 0 & \vline & 1 \\
+ 0 &  0  & 0  & 0  & 1 & \vline & 0 \\
+\end{bmatrix}
+\]
+
+the solution set is of the form:
+\[
+S= 
+\begin{bmatrix}
+ \frac{17}{6}\\ 0\\0\\1\\0\\
+\end{bmatrix}
++b
+\begin{bmatrix}
+ -15\\0\\1\\0\\0\\
+\end{bmatrix}
++c
+\begin{bmatrix}
+ -7\\1\\0\\0\\0\\
+\end{bmatrix}
+\quad b,c \in \mathbb{Q}
+\]
+\subsection*{c}
+solve for complex numbers
+\[
+\begin{bmatrix}
+ -1  & i & 1+i & \vline & i\\
+ 3+i & 0 & -4+2i& \vline & -1-i\\
+ 1-i & 2 & -1+2i & \vline & 1+i\\
+\end{bmatrix}
+\begin{matrix}
+ \RN{1}\\ \RN{2}\\ \RN{3}\\
+\end{matrix}
+\]
+\[
+\begin{bmatrix}
+ 3+i & 0 & -4+2i& \vline & -1-i\\
+ -1  & i & 1+i & \vline & i\\
+ (1-i+3+i -4)& 2+4i &( -1+2i-4+2i +4+4i) & \vline & 1+i-1-i+4i\\
+\end{bmatrix}
+\begin{matrix}
+ \RN{2}\\ \RN{1}\\ \RN{4}=\RN{3}+\RN{2}+4\times \RN{1}\\
+\end{matrix}
+\]
+\[
+ \begin{bmatrix}
+ 3+i & 0 & -4+2i& \vline & -1-i\\
+ -1  & i & 1+i & \vline & i\\
+ 0 & 2+4i & -1+8i   & \vline & 4i\\
+\end{bmatrix}
+\begin{matrix}
+
+\RN{2}\\ \RN{1}\\ \RN{4}\\
+\end{matrix}
+\]
+\[
+ \begin{bmatrix}
+ 3+i & 0     & -4+2i & \vline & -1-i\\
+ 0   & i     & (3+i)(1+i) -4+2i  & \vline & ( 3+i )i -1-i\\
+ 0   & 2+4i  & -1+8i & \vline & 4i\\
+\end{bmatrix}
+\begin{matrix}
+\RN{2}\\ \RN{5}= \RN{2}+(3+i)\times \RN{1} \\ \RN{4}\\
+\end{matrix}
+\]
+
+\[
+ \begin{bmatrix}
+ 3+i & 0     & -4+2i & \vline & -1-i\\
+ 0   & i     & -2+6i & \vline & 2i-2\\
+ 0   & 2+4i  & -1+8i & \vline & 4i\\
+\end{bmatrix}
+\]
+
+\[
+ \begin{bmatrix}
+ 3+i & 0     & -4+2i & \vline & -1-i\\
+ 0   & i     & -2+6i & \vline & 2i-2\\
+ 0   & 0     & (-1+8i +(4-2i)(-2+6i)) & \vline & 4i+(4-2i)(2i-2)\\
+\end{bmatrix}
+\begin{matrix}
+\RN{2}\\ \RN{5} \\ \RN{6}=\RN{4}+(4-2i)\times \RN{5}\\
+\end{matrix}
+\]
+
+\[
+ \begin{bmatrix}
+ 3+i & 0     & -4+2i & \vline & -1-i\\
+ 0   & i     & -2+6i & \vline & 2i-2\\
+ 0   & 0     & 3+36i & \vline & -4+16i\\
+\end{bmatrix}
+\]
+therefore we find $x_3$ as
+\[
+x_3= \frac{-4+16i}{3+36i}=\frac{(-4+16i)(3-36i)}{(3+36i)(3-36i)}=\frac{+192i+564}{3^2+6^4}
+\]
+
+\[
+ \begin{bmatrix}
+ 3+i & 0     &     & \vline & -1-i- \frac{(+192i+564)(-4+2i)}{3^2+6^4}\\
+ 0   & i     & 0   & \vline & 2i-2-\frac{(+192i+564)(-2+6i)}{3^2+6^4}\\
+ 0   & 0     & 1   & \vline & \frac{+192i+564}{3^2+6^4}\\
+\end{bmatrix}
+\]
+
+\[
+ \begin{bmatrix}
+ 3+i & 0     & 0   & \vline & -1-i- \frac{(+192i+564)(-4+2i)}{1305}\\
+ 0   & i     & 0   & \vline & 2i-2- \frac{(+192i+564)(-2+6i)}{1305}\\
+ 0   & 0     & 1   & \vline & \frac{+192i+564}{1305}\\
+\end{bmatrix}
+\]
+we calculate $x_2$ as
+\[
+x_2= -i\left( \frac{(2i-2)(3^2+6^4)-(+192i+564)(-2+6i)}{3^2+6^4} \right)=\frac{-330-390i}{1305}
+\]
+and $x_1$ as:
+\[
+x_1=  \frac{\left[(-1-i)(1305)-(+192i+564)(-4+2i)     \right](3-i)}{1305(3+i)(3-i)}\]\[
+=     \frac{\left[(-1-i)(1305)-(+192i+564)(-4+2i)     \right](3-i)}{13050}\]\[
+=     \frac{\left[-1305-1305i+768i +2256+384 -1128i   \right](3-i)}{13050}\]\[
+=     \frac{\left[-1305-1305i-360i +2640              \right](3-i)}{13050}\]\[
+=     \frac{(1335-1665i)(3-i)}{13050}\]\[
+=     \frac{2340-6330i}{13050}
+%1335*3= 4005
+%-1665i*3= 3000 + 1995= -4995i
+% -4995i-1335i= -6330i
+%4005 -1665= 2340
+\]
+whith these amazing numbers we can write the solution set in the form:
+\[
+S=\frac{1}{1305}
+\begin{bmatrix}
+ \frac{2340-6330i}{10} \\ -330-390i \\ 192i+564
+\end{bmatrix}
+\]
+\section{solve in $\mathbb{R} $ in dependence on $\lambda \in \mathbb{R} $}
+\subsection*{2}
+\[
+\begin{bmatrix}
+ \lambda & 1 & 1 & 1 & \vline & 1 \\
+ 1 & \lambda & 1 & 1 & \vline & 1 \\
+ 1 & 1 & \lambda & 1 & \vline & 1 \\
+ 1 & 1 & 1 & \lambda & \vline & 1 \\ 
+\end{bmatrix}
+\]
+we notice that the problem is symmetric, subtracting any two rows yields:
+
+\[
+(1-\lambda)x_i= (1-\lambda)x_j
+\]
+so in the case $\lambda=1$ we have three free variables and the solutionset is:
+\[
+S=
+a\begin{bmatrix}
+  1\\0\\0\\-1\\
+ \end{bmatrix}
++b\begin{bmatrix}
+   0\\1\\0\\-1\\
+  \end{bmatrix}
+ +c\begin{bmatrix}
+    0\\0\\1\\-1\\
+   \end{bmatrix}
+\quad a,b,c\in \mathbb{R}.
+\]
+in the case $\lambda \neq 1$ we get $x_1=x_2=x_3=x_4$ which in turn constrains $\lambda$ to:
+\[
+x = \frac{1}{\lambda+3}
+\]
+ which gives the solutionset
+ \[
+ S= \frac{1}{\lambda+3}
+ \begin{bmatrix}
+  1\\1\\1\\1
+ \end{bmatrix}
+ \]
+\section{check if the following matrices in $\mathbb{R}$ are invertible and compute their inverse if posible }
+\subsection{a}
+\[
+\begin{bmatrix}
+ 23 & 21 \\
+ 435 & 45\\
+\end{bmatrix}
+\]
+\[
+det 
+\begin{bmatrix}
+ 23 & 21 \\
+ 435 & 45\\
+\end{bmatrix}
+= 23\times45-435\times21= 8100
+\]
+by staring at the 21 it is obvious that the determinant is nonzero, hence we start to compute eigenvalues:
+set \[\det \mathbf{A} -\lambda \mathbf{I}\]
+\[
+(23-\lambda)(45-\lambda)=21\times435
+\]
+\[
+\lambda^2 -69\lambda + 1035 -9135=0
+\]
+\[
+\lambda^2 -69\lambda - 90^2
+\]
+% 23*45= 1035
+% 21*435= 9135
+\[
+\lambda_{1,2}= \frac{69}{2} \pm \sqrt{(\frac{4761+32400}{4})}= \frac{69}{2} \pm \sqrt{(\frac{4761+32400}{4})}
+\]
+% 69^2= 4900-140+1= 4761
+%32400+4761=37161
+\[
+\mathbf{A}^{-1}= \frac{1}{det \mathbf{A}} 
+\begin{bmatrix}
+ 45 & -435 \\
+ -21 & 23\\
+\end{bmatrix}
+= \begin{bmatrix}
+ \frac{45}{8100}  & -\frac{435}{8100} \\
+ -\frac{21}{8100} & \frac{23}{8100}\\
+\end{bmatrix}
+\]
+\subsection*{b}
+the inverse matrix of 
+$
+\begin{bmatrix}
+ 37
+\end{bmatrix}
+$
+exists and is 
+$
+\begin{bmatrix}
+ \frac{1}{37}
+\end{bmatrix}
+$
+\subsection*{c}
+\[
+det \begin{bmatrix}
+     17 & 24  & 215 \\
+     15 & -10 & 119\\
+     1  & 17  & 48\\
+    \end{bmatrix}
+=
+(17\times(-10)\times119)+(24\times 119\times1)+(215\times15\times17)-(17\times119\times 17)-(24\times 15\times 48)-(215\times(-10)\times1)
+\]
+\[
+= -20230+2856+ 54825 
+\]
+
+\end{document}

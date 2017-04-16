@@ -1,0 +1,101 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amssymb}   % for number sets
+\usepackage{amsmath}  % for \qed
+\newcommand{\RN}[1]{%
+  \textup{\uppercase\expandafter{\romannumeral#1}}%
+}
+%\let\conjugated\overline
+%opening
+\title{Exercises to the Linear Algebra $\RN{2}$ class tought by Prof Fritsche\\
+series 2}
+\author{Daniel Mayer\\
+Matrikel:\\
+2519400}
+\begin{document}
+
+%\maketitle
+\section{test}
+
+\setcounter{section}{1}
+\subsection{}
+show that the following identities are valid:
+\begin{itemize}
+	\item $ (A^+)^+=A$
+	\item $ (A^+)^*=(A^*)^+$
+	\item $ (AA^*)^+=(A^+)^*A^+$
+		
+\end{itemize}
+to demonstrate the identities the following equations are used:
+the definition of the moore-penrose pseudoinverse:
+\begin{align}
+	A A^+ A = A \\
+	A^+ A A^+ = A^+ \\
+	(A A^+)^* = A A^+ \\
+	(A^+ A)^*=A^+ A \\
+\end{align}
+further we have basic matrix operatins like:
+\begin{equation}
+	(AB)^*=B^*A^*
+\end{equation}
+\section*{solutions}
+\subsection*{$(A^+)^+=A$ :}
+$A^+\stackrel{(1)}{=} A^+(A^+)^+A^+$\\
+comparing this  with (2) we find:\\
+$ A^+(A^+)^+A^+ = A^+AA^+$\\
+since $A$ is arbitrary it follows: $(A^+)^+=A$
+
+\subsubsection{$(A^*)^+ = (A^+)^*$ }
+commutativity of the pseudoinverse and the conjugate transpose is a not yet established basic property, thus we proove it by showing that it fullfills the definition of the pseudoinverse:\\
+suppose $(A^+)^*$ is a pseudoinverse of $A^*$, then the following statements are true:
+\begin{enumerate}
+	\item $A^*=A^*(A^+)^*A^*\stackrel{(5)}{=} A^*(AA^+)^*\stackrel{(5)}{=} \left( (AA^+)A \right)^*= (AA^+A)^*\stackrel{(1)}{=} A^*$
+	\item $(A^+)^*=(A^+)^*A^*(A^+)^* \stackrel{(5)}{=} (A^+)^*\left( A^+A \right)^*\stackrel{(5)}{=} \left( (A^+A)A^+ \right)^*=(A^+AA^+)^*\stackrel{(2)}{=} (A^+)^*$
+	\item$ \left( A^*(A^+)^* \right)^*=\left( (A^+)^* \right)^*(A^*)^*=A^+A \stackrel{(4)}{=} (A^+A)^*\stackrel{(5)}{=} A^*(A^+)^*$
+	\item$ \left( (A^+)^*A^* \right)^*=(A^*)^*\left( (A^+)^* \right)^*=AA^+ \stackrel{(3)}{=} (AA^+)^*\stackrel{(5)}{=} (A^+)^*A^*$
+\end{enumerate}
+hence $(A^+)^*$ is indeed a pseudoinverse of $A^*$
+\subsubsection{$(AA^*)^+=(A^+)^*A^+$}
+\label{sub:$(AA^*)^+=(A^+)^*A^+$}
+here again we dont know how the pseudoinverse distributes, so we are left to go the long way:\\
+\begin{enumerate}
+	\item$ AA^* (A^+)^*A^+ AA^* \stackrel{(5)}{=} A A^+ A A^+ A A^* \stackrel{(1)}{=} A A^*$
+	\item$ (A^+)^*A^+ AA^* (A^+)^*A^+ \stackrel{(5)}{=} (A^+)^* A^+ A (A^+ A)^* A^+ \stackrel{(4)}{=}
+		(A^+)^* A^+ A A^+ A A^+ \stackrel{(2)}{=} (A^+)^* A^+$
+	\item $(A A^* (A^+)^* A^+)^*\stackrel{(5)}{=}(A(A^+A)^*A^+)^*\stackrel{(4)}{=} (AA^+AA^+)^*\stackrel{(5)}{=}
+		(AA^+)^*(AA^+)^* \stackrel{(3)}{=}AA^+AA^+\stackrel{(5)}{=} A(A^*(A^+)^*)^*A^+=A(A^*(A^*)^+)^*A^+\stackrel{(3)}{=}
+		AA^*(A^*)^+A^+=AA^*(A^+)^*A^+$
+	\item $ ((A^+)A^+AA^*)^*\stackrel{(5)}{=}((A^+)^*(A^*(A^+)^*)^*A^*)^*=( (A^+)^*A^*(A^+)^*A^*)^* \stackrel{(5)}{=}( (A^+)^*A^*)^*( (A^+)^*)^*
+		\stackrel{(4)}{=} (A^+)^*A^*(A^+)^*A^* \stackrel{(5)}{=}(A^+)^*(A^+A)^*A^*=(A^+)^*A^+AA^* $
+\end{enumerate}
+hence also this equality fulfills the definitin of the pseudoinverse.
+\subsubsection{$(A^*A)^+=A^+(A^+)^* $}
+\label{sub: $(A^*A)^+=A^+(A^+)^* $}
+since we have shown that the conjugate transpose and the pseudoinverse commute, this follows directly from the last:
+\begin{equation}
+	(A^*A)^+=\left( (AA^*)^+ \right)^*=\left((A^+)^*A^+  \right)^*=A^+(A^+)^*
+\end{equation}
+\subsubsection{$A^+=A^*(AA^*)^+$}
+\label{sub:$A^+=A^*(AA^*)^+$}
+\begin{equation}
+	A^*(AA^*)^+\stackrel{\ref{sub:$(AA^*)^+=(A^+)^*A^+$}}{=} A^*(A^+)^*A^+\stackrel{(5)}{=}(A^+A)^*A^+ \stackrel{(4)}{=}
+	A^+AA^+=A^+
+\end{equation}
+\subsubsection{$(A^*A)^+A^*=A^+$}
+\label{ssub:$(A^*A)^+A^*=A^+$}
+\begin{equation}
+	(A^*A)^+A^*+\stackrel{\ref{sub:$(AA^*)^+=(A^+)^*A^+$}}{=}A^+(A^+)^*A^*\stackrel{(5)}{=} A^+(AA^+)^*=A^+AA^+=A^+
+\end{equation}
+\subsubsection{$rank_\mathbb{C}(A^+)=rank_\mathbb{C}(A)$}
+\label{ssub:rank}
+suppose they are not equal
+\begin{equation}
+	rank_\mathbb{C}(A) \neq rank_\mathbb{C}(A^+)
+\end{equation}
+substituting $A^+$ for $A$ yields
+\begin{equation}
+	rank_\mathbb{C}(A^+)\neq rank_\mathbb{C}\left( (A^+)^+ \right)=rank_\mathbb{C}(A)
+\end{equation}
+which is a contradiction, hence we have $rank_\mathbb{C}(A^+)=rank_\mathbb{C}(A)$
+
+\end{document}

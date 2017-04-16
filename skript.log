@@ -1,0 +1,2675 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2017.4.12)  12 APR 2017 09:17
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**skript.tex
+(./skript.tex
+LaTeX2e <2016/03/31> patch level 3
+Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
+(/usr/share/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/share/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2016/04/23 3.9r The Babel package
+
+(/usr/share/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2012/08/20 v3.3p English support from the babel system
+
+(/usr/share/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2016/04/23 3.9r Babel common definitions
+\babel@savecnt=\count87
+\U@D=\dimen103
+)
+\l@canadian = a dialect from \language\l@american 
+\l@australian = a dialect from \language\l@british 
+\l@newzealand = a dialect from \language\l@british 
+))
+(/usr/share/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/share/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks14
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2016/06/28 v2.15d AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks15
+\ex@=\dimen104
+))
+(/usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen105
+)
+(/usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count88
+LaTeX Info: Redefining \frac on input line 199.
+\uproot@=\count89
+\leftroot@=\count90
+LaTeX Info: Redefining \overline on input line 297.
+\classnum@=\count91
+\DOTSCASE@=\count92
+LaTeX Info: Redefining \ldots on input line 394.
+LaTeX Info: Redefining \dots on input line 397.
+LaTeX Info: Redefining \cdots on input line 518.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen106
+LaTeX Font Info:    Redeclaring font encoding OML on input line 634.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
+\macc@depth=\count93
+\c@MaxMatrixCols=\count94
+\dotsspace@=\muskip10
+\c@parentequation=\count95
+\dspbrk@lvl=\count96
+\tag@help=\toks16
+\row@=\count97
+\column@=\count98
+\maxfields@=\count99
+\andhelp@=\toks17
+\eqnshift@=\dimen107
+\alignsep@=\dimen108
+\tagshift@=\dimen109
+\tagwidth@=\dimen110
+\totwidth@=\dimen111
+\lineht@=\dimen112
+\@envbody=\toks18
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks19
+LaTeX Info: Redefining \[ on input line 2739.
+LaTeX Info: Redefining \] on input line 2740.
+)
+(/usr/share/texmf-dist/tex/generic/german/german.sty v2.5e 1998-07-08
+Package: german 1998/07/08 v2.5e Support for writing german texts (br)
+\grmnU@D=\dimen113
+LaTeX Info: Redefining \glqq on input line 251.
+LaTeX Info: Redefining \glq on input line 264.
+LaTeX Info: Redefining \flqq on input line 277.
+LaTeX Info: Redefining \frqq on input line 285.
+LaTeX Info: Redefining \flq on input line 293.
+LaTeX Info: Redefining \frq on input line 300.
+german -- \language number for Austrian undefined, default 31 used.
+)
+(/usr/share/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2015/03/17 v1.2c Input encoding file
+\inpenc@prehook=\toks20
+\inpenc@posthook=\toks21
+
+(/usr/share/texmf-dist/tex/latex/base/latin1.def
+File: latin1.def 2015/03/17 v1.2c Input encoding file
+))
+(/usr/share/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2016/06/19 v1.99m Standard LaTeX package
+
+(/usr/share/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2016/06/19 v1.99m Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+))
+(/usr/share/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2011/09/28 v3.5.2 Customized lists
+\enitkv@toks@=\toks22
+\labelindent=\skip46
+\enit@outerparindent=\dimen114
+\enit@toks=\toks23
+\enit@inbox=\box28
+\enitdp@description=\count100
+)
+\c@theorem=\count101
+\c@corollary=\count102
+\c@beispiel=\count103
+\c@satz=\count104
+ (./skript.aux)
+\openout1 = `skript.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Try loading font information for U+msa on input line 29.
+
+(/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 29.
+
+(/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+
+! LaTeX Error: Command \textcurrency unavailable in encoding T1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.32 ...n  K"orper und V,W $\mathcal{K}$-Vektorrä
+                                                  ume
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `latin1'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.33 ...: Abbildung $\Phi : V \rightarrow W$ heiß
+                                                  t
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+LaTeX Warning: Command \^ invalid in math mode on input line 48.
+
+
+LaTeX Warning: Command \textonequarter invalid in math mode on input line 48.
+
+
+LaTeX Warning: Command \^ invalid in math mode on input line 48.
+
+
+LaTeX Warning: Command \textonequarter invalid in math mode on input line 48.
+
+
+LaTeX Warning: Command \^ invalid in math mode on input line 48.
+
+
+LaTeX Warning: Command \textonequarter invalid in math mode on input line 48.
+
+Missing character: There is no � in font cmr10!
+Missing character: There is no � in font cmr10!
+Missing character: There is no � in font cmr10!
+
+LaTeX Warning: Command \^ invalid in math mode on input line 51.
+
+
+LaTeX Warning: Command \textonequarter invalid in math mode on input line 51.
+
+
+LaTeX Warning: Command \^ invalid in math mode on input line 51.
+
+
+LaTeX Warning: Command \textonequarter invalid in math mode on input line 51.
+
+
+LaTeX Warning: Command \^ invalid in math mode on input line 51.
+
+
+LaTeX Warning: Command \textonequarter invalid in math mode on input line 51.
+
+
+LaTeX Warning: Command \^ invalid in math mode on input line 51.
+
+
+LaTeX Warning: Command \textonequarter invalid in math mode on input line 51.
+
+Missing character: There is no � in font cmr10!
+Missing character: There is no � in font cmr10!
+Missing character: There is no � in font cmr10!
+Missing character: There is no � in font cmr10!
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+
+! LaTeX Error: Command \textcurrency unavailable in encoding T1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.65 ...i : C [a,b]  \rightarrow \mathbb{R}$ gemä
+                                                  ß $\Phi(f):= \int_{a}^{b}...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `latin1'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.65 ...: C [a,b]  \rightarrow \mathbb{R}$ gemäß
+                                                   $\Phi(f):= \int_{a}^{b}{f...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+LaTeX Warning: Command \^ invalid in math mode on input line 69.
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 69.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ...@spacefactor \spacefactor }\accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.69  dann ist $\Phi (f)=f´
+                            $ eie lineare Abbildung $V \rightarrow W  $linea...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+! Missing { inserted.
+<to be read again> 
+                   \egroup 
+l.69  dann ist $\Phi (f)=f´
+                            $ eie lineare Abbildung $V \rightarrow W  $linea...
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! You can't use `\spacefactor' in math mode.
+\add@accent ...}\accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.69  dann ist $\Phi (f)=f´
+                            $ eie lineare Abbildung $V \rightarrow W  $linea...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.69  dann ist $\Phi (f)=f´$
+                              eie lineare Abbildung $V \rightarrow W  $linea...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no � in font cmr10!
+Missing character: There is no � in font cmex10!
+
+! LaTeX Error: Command \textcurrency unavailable in encoding T1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.89 ...ein unterrraum von W dann ist das vollstä
+                                                  ndige Urbild \[\Phi⁻(\ti...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \^ invalid in math mode on input line 89.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `latin1'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.89 ...dann ist das vollständige Urbild \[\Phi�
+                                                  �(\tilde{U} ) = {v \in V: ...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+LaTeX Warning: Command \guillemotright invalid in math mode on input line 89.
+
+Missing character: There is no � in font cmr10!
+
+LaTeX Warning: Command \^ invalid in math mode on input line 95.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `latin1'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.95 sei $v_1, v_2 \in \Phi�
+                             �(\tilde{U} ) \Rightarrow \Phi (v_1),\Phi(v_2) ...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+LaTeX Warning: Command \guillemotright invalid in math mode on input line 95.
+
+
+LaTeX Warning: Command \^ invalid in math mode on input line 95.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `latin1'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.95 ...\tilde{U} ) \Rightarrow v_1+v_2 \in \Phi�
+                                                  �(\tilde{U} ) $
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+LaTeX Warning: Command \guillemotright invalid in math mode on input line 95.
+
+Missing character: There is no � in font cmr10!
+Missing character: There is no � in font cmr10!
+
+! LaTeX Error: Command \textcurrency unavailable in encoding T1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.105 ...s vorrausgehendem beweis die injektivitä
+                                                  t von $\Phi$
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Command \textcurrency unavailable in encoding T1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.108 ...cal{K}^q \rightarrow \mathcal{K}^P $gemä
+                                                  ß $\Phi (x):= Ax$ gelten,...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `latin1'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.108 ...l{K}^q \rightarrow \mathcal{K}^P $gemäß
+                                                   $\Phi (x):= Ax$ gelten, dann
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+Overfull \hbox (14.67393pt too wide) in paragraph at lines 108--111
+\T1/cmr/m/it/10.95 dann $\OMS/cmsy/m/n/10.95 =\OT1/cmr/m/n/10.95 ^^H = [] = [] 
+= \OMS/cmsy/m/n/10.95 A$ \T1/cmr/m/it/10.95 und $[] \OT1/cmr/m/n/10.95 ^^H = []
+ =
+ []
+
+[2]
+! Undefined control sequence.
+l.115 Bemerkung: sei U, V und W \K
+                                   vektorraäume sowie \Psi : U-->V , \Phi :...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Command \textcurrency unavailable in encoding T1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.115 Bemerkung: sei U, V und W \K vektorraä
+                                             ume sowie \Psi : U-->V , \Phi :...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.115 ...ei U, V und W \K vektorraäume sowie \Psi
+                                                   : U-->V , \Phi : U-->V li...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Undefined control sequence.
+l.116 \forall u1, u2 \in U, \alpha1 , alpha2 in \K
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `macro parameter character #' in math mode.
+l.117 ... \alpha2 u_2))= \alpha_1 \phi(\Psi(u1)) #
+                                                  missing
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Undefined control sequence.
+l.118 S 9.6 seien V und W \K
+                             vektorräume, wobei 1\leq q< \inf für q= \dim ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 118.
+
+
+LaTeX Warning: Command \textcurrency invalid in math mode on input line 118.
+
+
+! LaTeX Error: Command \textcurrency unavailable in encoding T1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.118 S 9.6 seien V und W \K vektorrä
+                                      ume, wobei 1\leq q< \inf für q= \dim ...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 118.
+
+
+LaTeX Warning: Command \textonequarter invalid in math mode on input line 118.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 118.
+
+
+LaTeX Warning: Command \textonequarter invalid in math mode on input line 118.
+
+! Undefined control sequence.
+l.118 ...asisn von v wobei w1, w2, ...,wn \elememt
+                                                   W
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 119.
+
+
+LaTeX Warning: Command \textonequarter invalid in math mode on input line 119.
+
+! Undefined control sequence.
+l.119 ... W mit \phi (v_i)=w_i für jjedes i in \Z
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 120.
+
+
+LaTeX Warning: Command \textonequarter invalid in math mode on input line 120.
+
+! Undefined control sequence.
+l.120 diese lineare abbildung \phi erfüllt \im
+                                                \Phi = \span(w_1,w_2,...,w_n).
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Misplaced \span.
+l.120 ... abbildung \phi erfüllt \im \Phi = \span
+                                                  (w_1,w_2,...,w_n).
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Undefined control sequence.
+l.121 beweis: sei x \elem
+                          V , ==> \exist ! folge (\alpha_j)_{j=1}^k aus k mi...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.121 beweis: sei x \elem V , ==> \exist
+                                         ! folge (\alpha_j)_{j=1}^k aus k mi...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Extra }, or forgotten $.
+l.123 \Phi (x)}
+               \sum _{j=1}^q {\phi(\alpha_jw_j)} ==> falls \phi eine lineare...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Undefined control sequence.
+l.124 ...ef \phi :V-->W derart dass jedem x \in \V
+                                                   wie oben mit seiner Basis...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.126 Nachweis von (1): \foarll
+                                k in \Z_{1,q}: v_k=\sum _{j=1}^q \delta_{jk}...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.126 Nachweis von (1): \foarll k in \Z
+                                       _{1,q}: v_k=\sum _{j=1}^q \delta_{jk}...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 127.
+
+
+LaTeX Warning: Command \textonequarter invalid in math mode on input line 127.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 128.
+
+
+LaTeX Warning: Command \textcurrency invalid in math mode on input line 128.
+
+
+! LaTeX Error: Command \textcurrency unavailable in encoding T1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.128 nnachweis der linearitä
+                              t von \Phi:
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+l.129 seien x,y \elem
+                       V sowie \alpha,\beta \elem \k : ==> \exist ! (\alpha_...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.129 seien x,y \elem  V sowie \alpha,\beta \elem
+                                                  \k : ==> \exist ! (\alpha_...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Command \k invalid in math mode on input line 129.
+
+! Undefined control sequence.
+l.129 ... sowie \alpha,\beta \elem \k : ==> \exist
+                                                   ! (\alpha_i)_{j=1}^q aus ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.129 ... : ==> \exist ! (\alpha_i)_{j=1}^q aus \K
+                                                   mit (2) ind y= \sum _{j=1...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.130 ...sum _{j=1}^k {\alpha \alpha_j+\beta \beat
+                                                  _j}= \Phi(\aölpha x+ \bet...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Command \� invalid in math mode on input line 130.
+
+
+! LaTeX Error: Command \� unavailable in encoding T1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.130 ...{\alpha \alpha_j+\beta \beat_j}= \Phi(\a�
+                                                  �lpha x+ \beta y)
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+l.131 = \sum _{j=1}^k {\alpha \alpha_j+\beta \beat
+                                                  _j}w_i=
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.133 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.133 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no � in font cmr10!
+Missing character: There is no � in font cmr10!
+Missing character: There is no � in font cmr10!
+Missing character: There is no � in font cmr10!
+Missing character: There is no � in font cmr10!
+Missing character: There is no � in font cmr10!
+Missing character: There is no � in font cmr10!
+
+Overfull \hbox (45.43788pt too wide) in paragraph at lines 115--133
+\OML/cmm/m/it/10.95 Vlineareabbilcung; dannistauch\OT1/cmr/m/n/10.95 ^^H[] : \O
+ML/cmm/m/it/10.95 U \OMS/cmsy/m/n/10.95 ^^@ ^^@ \OML/cmm/m/it/10.95 > Veineline
+areabbildung; denn\OMS/cmsy/m/n/10.95 8\OML/cmm/m/it/10.95 u\OT1/cmr/m/n/10.95 
+1\OML/cmm/m/it/10.95 ; u\OT1/cmr/m/n/10.95 2 \OMS/cmsy/m/n/10.95 2
+ []
+
+
+Overfull \hbox (0.99011pt too wide) in paragraph at lines 115--133
+\OML/cmm/m/it/10.95 U; \OT1/cmr/m/n/10.95 1\OML/cmm/m/it/10.95 ; alpha\OT1/cmr
+/m/n/10.95 2\OML/cmm/m/it/10.95 in\OT1/cmr/m/n/10.95 ^^H[](\OML/cmm/m/it/10.95 
+[]u[]\OT1/cmr/m/n/10.95 2\OML/cmm/m/it/10.95 u[]\OT1/cmr/m/n/10.95 ) = ^^H(	(
+\OML/cmm/m/it/10.95 []u[]\OT1/cmr/m/n/10.95 2\OML/cmm/m/it/10.95 u[]\OT1/cmr/
+m/n/10.95 )) = ^^H(	(\OML/cmm/m/it/10.95 []u[]\OT1/cmr/m/n/10.95 )	(\OML/cmm/m
+/it/10.95 \OT1/cmr/m/n/10.95 2\OML/cmm/m/it/10.95 u[]\OT1/cmr/m/n/10.95 )) =
+ []
+
+
+Overfull \hbox (1.25337pt too wide) in paragraph at lines 115--133
+\OML/cmm/m/it/10.95 []^^^\OT1/cmr/m/n/10.95 (	(\OML/cmm/m/it/10.95 u\OT1/cmr/m
+/n/10.95 1))\OML/cmm/m/it/10.95 missingS\OT1/cmr/m/n/10.95 9\OML/cmm/m/it/10.95
+ :\OT1/cmr/m/n/10.95 6\OML/cmm/m/it/10.95 seienVundWvektorrume; wobei\OT1/cmr/m
+/n/10.95 1 \OMS/cmsy/m/n/10.95 ^^T \OML/cmm/m/it/10.95 q < [] f[]rq \OT1/cmr/m/
+n/10.95 =
+ []
+
+
+Overfull \hbox (231.59103pt too wide) in paragraph at lines 115--133
+[] \OML/cmm/m/it/10.95 Verf[]lltseidesweiterensieenv\OT1/cmr/m/n/10.95 1\OML/cm
+m/m/it/10.95 ; v\OT1/cmr/m/n/10.95 2\OML/cmm/m/it/10.95 ; :::; vneinebasisnvonv
+wobeiw\OT1/cmr/m/n/10.95 1\OML/cmm/m/it/10.95 ; w\OT1/cmr/m/n/10.95 2\OML/cmm/m
+/it/10.95 ; :::; wnWdanngibtesgenaueinelieareabbildung\OT1/cmr/m/n/10.95 ^^H :
+ []
+
+
+Overfull \hbox (16.73788pt too wide) in paragraph at lines 115--133
+\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 w[]; w[]; :::; w[]\OT1/cmr/m/n/10.95 )\
+OML/cmm/m/it/10.95 :beweis \OT1/cmr/m/n/10.95 : \OML/cmm/m/it/10.95 seixV; \OT1
+/cmr/m/n/10.95 ==\OML/cmm/m/it/10.95 >\OT1/cmr/m/n/10.95 !\OML/cmm/m/it/10.95 f
+olge\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 []\OT1/cmr/m/n/10.95 )[]\OML/cmm/m
+/it/10.95 auskmitx \OT1/cmr/m/n/10.95 = [][] [] ==\OML/cmm/m/it/10.95 >
+ []
+
+
+Overfull \hbox (48.78055pt too wide) in paragraph at lines 115--133
+\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 satz\OT1/cmr/m/n/10.95 9\OML/cmm/m/it/1
+0.95 :\OT1/cmr/m/n/10.95 1)\OML/cmm/m/it/10.95 ^^^\OT1/cmr/m/n/10.95 (\OML/cmm/
+m/it/10.95 x\OT1/cmr/m/n/10.95 ) = \OML/cmm/m/it/10.95 ^^^ [][] [] \OT1/cmr/m/n
+/10.95 = [][] [] ==\OML/cmm/m/it/10.95 > wenn\OT1/cmr/m/n/10.95 (1)^^H(\OML/cmm
+/m/it/10.95 x\OT1/cmr/m/n/10.95 ) [][] [] ==\OML/cmm/m/it/10.95 >
+ []
+
+
+Overfull \hbox (50.7173pt too wide) in paragraph at lines 115--133
+\OML/cmm/m/it/10.95 V \OMS/cmsy/m/n/10.95 ^^@ ^^@ \OML/cmm/m/it/10.95 > Wderart
+dassjedemx \OMS/cmsy/m/n/10.95 2 \OML/cmm/m/it/10.95 wieobenmitseinerBasisdarst
+ellungzugeordnetwird \OT1/cmr/m/n/10.95 :
+ []
+
+
+Overfull \hbox (1.56464pt too wide) in paragraph at lines 115--133
+\OML/cmm/m/it/10.95 Z[]^^^\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 v[]\OT1/cmr/m
+/n/10.95 ) = [][] \OML/cmm/m/it/10.95 ^^N[]w[] \OT1/cmr/m/n/10.95 = \OML/cmm/m/
+it/10.95 w[] \OT1/cmr/m/n/10.95 ==\OML/cmm/m/it/10.95 > \OT1/cmr/m/n/10.95 (1)\
+OML/cmm/m/it/10.95 erf[]lltnnachweisderlinearittvon\OT1/cmr/m/n/10.95 ^^H :
+ []
+
+
+Overfull \hbox (17.67918pt too wide) in paragraph at lines 115--133
+[][] []\OML/cmm/m/it/10.95 w[] \OT1/cmr/m/n/10.95 = \OML/cmm/m/it/10.95  [][] 
+[]$ 
+ []
+
+! Undefined control sequence.
+l.134 \foral
+             x \in V \Phi(x):= \sum _{j=1}^q {\phi(\alpha_jw_j)} \elem \span...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.134 \foral x \in
+                   V \Phi(x):= \sum _{j=1}^q {\phi(\alpha_jw_j)} \elem \span...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Undefined control sequence.
+l.134 ...= \sum _{j=1}^q {\phi(\alpha_jw_j)} \elem
+                                                   \span'(w1,...,wq)==> im \...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Misplaced \span.
+l.134 ... _{j=1}^q {\phi(\alpha_jw_j)} \elem \span
+                                                  '(w1,...,wq)==> im \pohi \...
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Undefined control sequence.
+l.134 ...w_j)} \elem \span'(w1,...,wq)==> im \pohi
+                                                   \leq \span'(w1,...,wq)  (6)
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Misplaced \span.
+l.134 ... \span'(w1,...,wq)==> im \pohi \leq \span
+                                                  '(w1,...,wq)  (6)
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Undefined control sequence.
+l.135 sei umgekehrt w \elem
+                             \span'(w1,...,wq) vorgegeben ==> \exist \gamma_...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Misplaced \span.
+l.135 sei umgekehrt w \elem  \span
+                                  '(w1,...,wq) vorgegeben ==> \exist \gamma_...
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Undefined control sequence.
+l.135 ...  \span'(w1,...,wq) vorgegeben ==> \exist
+                                                   \gamma_1,...,\gamma_q \in...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.135 ...n ==> \exist \gamma_1,...,\gamma_q \in \K
+                                                  : w=\sum _{j=1}^k {\gamma_...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.136 ...}= \phi (\sum _{j=1}^k {\beta_jv_j) \elem
+                                                   Im\Phi
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Misplaced \span.
+l.137 ==> \span
+               '(w1,...,wq} \subseteqq \Im \Phi
+I can't figure out why you would want to use a tab mark
+or \cr or \span just now. If something like a right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+LaTeX Warning: Command \k invalid in math mode on input line 138.
+
+! Undefined control sequence.
+l.138 F9.7 seien V und W \k Vr wobei 1\leqdimV
+                                              <+\inf, sei r\elem \N sowie v_...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.138 ...W \k Vr wobei 1\leqdimV<+\inf, sei r\elem
+                                                   \N sowie v_1,v_2,..,v_r \...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.138 ...k Vr wobei 1\leqdimV<+\inf, sei r\elem \N
+                                                   sowie v_1,v_2,..,v_r \ele...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.138 ... sei r\elem \N sowie v_1,v_2,..,v_r \elem
+                                                   V und w_1,w_2,..,w_r \elem W
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.138 ...2,..,v_r \elem V und w_1,w_2,..,w_r \elem
+                                                   W
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 139.
+
+
+LaTeX Warning: Command \textcurrency invalid in math mode on input line 139.
+
+
+! LaTeX Error: Command \textcurrency unavailable in encoding T1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.139 ...rausgesetz dass v_1,..,v_r linear unabhä
+                                                  ngig, dann gibt es mindest...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+l.139 ...V--> W, mit \Phi(v_j)=W_j \forall j\elemN
+                                                  _{1,r}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 140.
+
+
+LaTeX Warning: Command \textcurrency invalid in math mode on input line 140.
+
+
+! LaTeX Error: Command \textcurrency unavailable in encoding T1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 beweis:  Nach Basisergä
+                              nzungssatz r\leq q im Fall r=q wende s 9.6 an ...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 140.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 140.
+
+
+LaTeX Warning: Command \textcurrency invalid in math mode on input line 140.
+
+
+! LaTeX Error: Command \textcurrency unavailable in encoding T1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ... an . im fall r<q können nach Basisergä
+                                                  nzungssatz vektoren v_r+1,...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+l.140 ...gänzungssatz vektoren v_r+1,...,v_q\elem
+                                                   V
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 141.
+
+
+LaTeX Warning: Command \textcurrency invalid in math mode on input line 141.
+
+
+! LaTeX Error: Command \textcurrency unavailable in encoding T1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.141 derart ergä
+                  nzt werden, dass v_1,...,v_r,v_r+1,...,v_q eine basis von ...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 141.
+
+! Undefined control sequence.
+l.141 ...V ist ind wir können S 9.6 anwenden \QED
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.142 \Bemerkungaus
+                    dem beweis von folgerung 9.7 ist ersichtlich, dass im fa...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.144 seien Vun d W \K
+                       vr sowie \Phi :v--> W  eine lineare abbildung, dann g...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.146 S9.9 seien V und W \K
+                           -Vektorräume  wobei dim V < \inf, sowie \Phi :v-...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 146.
+
+
+LaTeX Warning: Command \textcurrency invalid in math mode on input line 146.
+
+
+! LaTeX Error: Command \textcurrency unavailable in encoding T1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.146 S9.9 seien V und W \K-Vektorrä
+                                     ume  wobei dim V < \inf, sowie \Phi :v-...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+Missing character: There is no � in font cmr10!
+Missing character: There is no � in font cmr10!
+Missing character: There is no � in font cmr10!
+Missing character: There is no � in font cmr10!
+Missing character: There is no � in font cmr10!
+Missing character: There is no � in font cmr10!
+Missing character: There is no � in font cmr10!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.146 ...dann gilt \dim (\Im \Phi\)+dann gilt \dim
+                                                   (\ker\Phi\)= dim V
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Undefined control sequence.
+l.148 Definition:seien V und W \K
+                                 -Vektorräume  sowie \Phi :v--> W eine line...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Command \textcurrency unavailable in encoding T1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.148 Definition:seien V und W \K-Vektorrä
+                                           ume  sowie \Phi :v--> W eine line...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.148 ...seien V und W \K-Vektorräume  sowie \Phi
+                                                   :v--> W eine lineare abbi...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 148.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `latin1'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.148 ...:v--> W eine lineare abbildung dann heiß
+                                                  t Rang_K von \Phi .= \dim ...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+Missing character: There is no � in font cmr10!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.148 ...Phi .= \dim (\Im \Phi\) der Rang von \Phi
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Undefined control sequence.
+l.149 Satz 9.10 seien V und W \K
+                                -Vektorräume sowie \Phi :v--> W  eine linea...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 149.
+
+
+LaTeX Warning: Command \textcurrency invalid in math mode on input line 149.
+
+
+! LaTeX Error: Command \textcurrency unavailable in encoding T1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.149 Satz 9.10 seien V und W \K-Vektorrä
+                                          ume sowie \Phi :v--> W  eine linea...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 151.
+
+
+LaTeX Warning: Command \textcurrency invalid in math mode on input line 151.
+
+
+! LaTeX Error: Command \textcurrency unavailable in encoding T1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.151 ... W <\inf gilt, sind folgenda aaussagen ä
+                                                  quivalent:
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.155 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+Missing character: There is no � in font cmr10!
+Missing character: There is no � in font cmr10!
+
+Overfull \hbox (195.23517pt too wide) in paragraph at lines 134--155
+[]\T1/cmr/m/n/10.95 x $\OMS/cmsy/m/n/10.95 2 \OML/cmm/m/it/10.95 V\OT1/cmr/m/n/
+10.95 ^^H(\OML/cmm/m/it/10.95 x\OT1/cmr/m/n/10.95 ) := [][] [][](\OML/cmm/m/it/
+10.95 w\OT1/cmr/m/n/10.95 1\OML/cmm/m/it/10.95 ; :::; wq\OT1/cmr/m/n/10.95 ) ==
+\OML/cmm/m/it/10.95 > im \OMS/cmsy/m/n/10.95 ^^T[] \OT1/cmr/m/n/10.95 (\OML/cmm
+/m/it/10.95 w\OT1/cmr/m/n/10.95 1\OML/cmm/m/it/10.95 ; :::; wq\OT1/cmr/m/n/10.9
+5 )(6)\OML/cmm/m/it/10.95 seiumgekehrtw[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.9
+5 w\OT1/cmr/m/n/10.95 1\OML/cmm/m/it/10.95 ; :::; wq\OT1/cmr/m/n/10.95 )\OML/cm
+m/m/it/10.95 vorgegeben \OT1/cmr/m/n/10.95 ==\OML/cmm/m/it/10.95 >
+ []
+
+
+Overfull \hbox (86.28122pt too wide) in paragraph at lines 134--155
+\OML/cmm/m/it/10.95 ^^M[]; :::; ^^M[] \OMS/cmsy/m/n/10.95 2\OT1/cmr/m/n/10.95 :
+ \OML/cmm/m/it/10.95 w \OT1/cmr/m/n/10.95 = [][] [] ==\OML/cmm/m/it/10.95 > w \
+OT1/cmr/m/n/10.95 = [][] [] = \OML/cmm/m/it/10.95 ^^^\OT1/cmr/m/n/10.95 ([][] [
+] \U/msa/m/n/10.95 j
+ []
+
+
+Overfull \hbox (479.61359pt too wide) in paragraph at lines 134--155
+\OMS/cmsy/m/n/10.95 =\OT1/cmr/m/n/10.95 ^^H\OML/cmm/m/it/10.95 F\OT1/cmr/m/n/10
+.95 9\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 7\OML/cmm/m/it/10.95 seienVundW[]r
+wobei\OT1/cmr/m/n/10.95 1 \OML/cmm/m/it/10.95 < \OT1/cmr/m/n/10.95 + []\OML/cmm
+/m/it/10.95 ; seirsowiev[]; v[]; ::; v[]Vundw[]; w[]; ::; w[]Wseivorrausgesetzd
+assv[]; ::; v[]linearunabhngig; danngibtesmindestenseinelineareabbildung\OT1/cm
+r/m/n/10.95 ^^H :
+ []
+
+
+Overfull \hbox (51.2481pt too wide) in paragraph at lines 134--155
+\OML/cmm/m/it/10.95 qimFallr \OT1/cmr/m/n/10.95 = \OML/cmm/m/it/10.95 qwendes\O
+T1/cmr/m/n/10.95 9\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 6\OML/cmm/m/it/10.95 
+an:imfallr < qk\OMS/cmsy/m/n/10.95 {\OML/cmm/m/it/10.95 nnennachBasisergnzungss
+atzvektorenv[] \OT1/cmr/m/n/10.95 +
+ []
+
+
+Overfull \hbox (427.76393pt too wide) in paragraph at lines 134--155
+\OT1/cmr/m/n/10.95 1\OML/cmm/m/it/10.95 ; :::; v[]Vderartergnztwerden; dassv[];
+ :::; v[]; v[] \OT1/cmr/m/n/10.95 + 1\OML/cmm/m/it/10.95 ; :::; v[]einebasisvon
+Vistindwirk\OMS/cmsy/m/n/10.95 {\OML/cmm/m/it/10.95 nnenS\OT1/cmr/m/n/10.95 9\O
+ML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 6\OML/cmm/m/it/10.95 anwendendembeweisvon
+folgerung\OT1/cmr/m/n/10.95 9\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 7\OML/cmm/
+m/it/10.95 istersichtlich; dassimfalldassr <
+ []
+
+
+Overfull \hbox (70.46378pt too wide) in paragraph at lines 134--155
+\OML/cmm/m/it/10.95 qundW \OMS/cmsy/m/n/10.95 6\OT1/cmr/m/n/10.95 = []\OML/cmm/
+m/it/10.95 dielineareabbildungnichteindeutigbestimmtist:L\OT1/cmr/m/n/10.95 9\O
+ML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 8\OML/cmm/m/it/10.95 seienVundWvrsowie\OT
+1/cmr/m/n/10.95 ^^H :
+ []
+
+
+Overfull \hbox (13.91063pt too wide) in paragraph at lines 134--155
+\OML/cmm/m/it/10.95 v \OMS/cmsy/m/n/10.95 ^^@ ^^@ \OML/cmm/m/it/10.95 > Weineli
+neareabbildung; danngilt [] \OMS/cmsy/m/n/10.95 =\OT1/cmr/m/n/10.95 ^^H \OMS/cm
+sy/m/n/10.95 ^^T \OML/cmm/m/it/10.95 dimV:S\OT1/cmr/m/n/10.95 9\OML/cmm/m/it/10
+.95 :\OT1/cmr/m/n/10.95 9\OML/cmm/m/it/10.95 seienVundW \OMS/cmsy/m/n/10.95 ^^@
+
+ []
+
+
+Overfull \hbox (97.93991pt too wide) in paragraph at lines 134--155
+\OML/cmm/m/it/10.95 VektorrumewobeidimV < []; sowie\OT1/cmr/m/n/10.95 ^^H : \OM
+L/cmm/m/it/10.95 v \OMS/cmsy/m/n/10.95 ^^@ ^^@ \OML/cmm/m/it/10.95 > Weinelinea
+reabbildungdanngilt []\OT1/cmr/m/n/10.95 (\OMS/cmsy/m/n/10.95 =\OT1/cmr/m/n/10.
+95 ^^H$\T1/cmr/m/n/10.95 +dann
+ []
+
+
+Overfull \hbox (269.8682pt too wide) in paragraph at lines 134--155
+\T1/cmr/m/n/10.95 von $\OT1/cmr/m/n/10.95 ^^H\OML/cmm/m/it/10.95 Satz\OT1/cmr/m
+/n/10.95 9\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 10\OML/cmm/m/it/10.95 seienVu
+ndW \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 Vektorrumesowie\OT1/cmr/m/n/10.
+95 ^^H : \OML/cmm/m/it/10.95 v \OMS/cmsy/m/n/10.95 ^^@ ^^@ \OML/cmm/m/it/10.95 
+> Weinelineareabbildung\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 a\OT1/cmr/m/n/10
+.95 )\OML/cmm/m/it/10.95 falls^^^injektiv; soistdieUmkehrbildung\OT1/cmr/m/n/10
+.95 ^^H[] :
+ []
+
+
+Overfull \hbox (131.31096pt too wide) in paragraph at lines 134--155
+\OMS/cmsy/m/n/10.95 =\OT1/cmr/m/n/10.95 ^^H \OMS/cmsy/m/n/10.95 ^^@ ^^@ \OML/cm
+m/m/it/10.95 > Vebenfallslinear\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 b\OT1/cm
+r/m/n/10.95 )\OML/cmm/m/it/10.95 imfalldassdimV \OT1/cmr/m/n/10.95 = \OML/cmm/m
+/it/10.95 dimW < [] gilt; sindfolgendaaaussagenquivalent \OT1/cmr/m/n/10.95 :
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.157 ...avchten wir die natürliche basis B:= (e^
+                                                  {(q)}_1,e^{(q)}_1,...,e^{(...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Undefined control sequence.
+l.157 ...{(q)}_1,e^{(q)}_1,...,e^{(q)}_q) ) des \K
+                                                  ^q gilt für jede wahl von...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 157.
+
+
+LaTeX Warning: Command \textonequarter invalid in math mode on input line 157.
+
+! Undefined control sequence.
+l.158 \elem
+            \K^q
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.158 \elem \K
+              ^q
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Double superscript.
+l.158 \elem \K^
+               q
+I treat `x^1^2' essentially like `x^1{}^2'.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 160.
+
+
+LaTeX Warning: Command \textonequarter invalid in math mode on input line 160.
+
+! Undefined control sequence.
+l.160 ...nicht trivialen) endlich dimensionalen \K
+                                                   Vektorräumen auf das ren...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 160.
+
+
+LaTeX Warning: Command \textcurrency invalid in math mode on input line 160.
+
+
+! LaTeX Error: Command \textcurrency unavailable in encoding T1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.160 ...ialen) endlich dimensionalen \K Vektorrä
+                                                  umen auf das renchen in
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+l.161 \K
+        ^q zurückgeführt weden kann, wobei q die dimension des urbildvekto...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 161.
+
+
+LaTeX Warning: Command \textonequarter invalid in math mode on input line 161.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 161.
+
+
+LaTeX Warning: Command \textonequarter invalid in math mode on input line 161.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.162 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+Missing character: There is no � in font cmr10!
+Missing character: There is no � in font cmr10!
+Missing character: There is no � in font cmr10!
+Missing character: There is no � in font cmr10!
+Missing character: There is no � in font cmr10!
+
+Overfull \hbox (47.59834pt too wide) in paragraph at lines 156--162
+\T1/cmr/m/n/10.95 travchten wir die nat�$[]$rliche ba-sis B:= (e$[]\OML/cmm/m/i
+t/10.95 ; e[]; :::; e[]\OT1/cmr/m/n/10.95 ))\OML/cmm/m/it/10.95 des[]giltf[]rje
+dewahlvonx \OT1/cmr/m/n/10.95 =
+ []
+
+
+Overfull \hbox (1114.19522pt too wide) in paragraph at lines 156--162
+\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 x[]; x[]; :::; x[]\OT1/cmr/m/n/10.95 )[
+][]\OML/cmm/m/it/10.95 diebeziehung\OT1/cmr/m/n/10.95 
+(\OML/cmm/m/it/10.95 x\OT1/cmr/m/n/10.95 ) = \OML/cmm/m/it/10.95 xwegenx \OT1/c
+mr/m/n/10.95 = [][] \OML/cmm/m/it/10.95 x[]e[]dasfolgendetheoremistgrobgesagtdi
+egrndlagedaf[]r; dassdasrechnenin\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 nichtt
+rivialen\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 endlichdimensionalenVektorrumen
+aufdasrenchenin[]zur[]ckgef[]hrtwedenkann; wobeiqdiedimensiondesurbildvektorrau
+mesderlinearenabbildungdarstellt:$ 
+ []
+
+[3]
+! Undefined control sequence.
+l.165 sein q \elem
+                   \N sowie V ein \k Vr mit dim V = q bezeichne (v_1,...,v_q...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.165 sein q \elem \N
+                      sowie V ein \k Vr mit dim V = q bezeichne (v_1,...,v_q...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.165 ...e V ein \k Vr mit dim V = q bezeichne (v_
+                                                  1,...,v_q) eine basis von ...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Undefined control sequence.
+l.165 ...ie koordinatenabbildung \Omega_B: V--> \K
+                                                  ^q bezüglich der geordneten
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 165.
+
+
+LaTeX Warning: Command \textonequarter invalid in math mode on input line 165.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 167.
+
+
+LaTeX Warning: Command \textcurrency invalid in math mode on input line 167.
+
+
+! LaTeX Error: Command \textcurrency unavailable in encoding T1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.167 isomorphismusdie gemä
+                            ß S9.6 durch die bedingung \Phi_B (e_j^{(q)})=v...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 167.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `latin1'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.167 isomorphismusdie gemäß
+                               S9.6 durch die bedingung \Phi_B (e_j^{(q)})=v...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+! Undefined control sequence.
+l.167 ...ung \Phi_B (e_j^{(q)})=vj \forall j in \Z
+                                                  _q eeoindeutig bestimmte l...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.167 ...oindeutig bestimmte lineare abbildung\OPh
+                                                   _B: K^q--> V
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.169 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+Missing character: There is no � in font cmr10!
+Missing character: There is no � in font cmr10!
+Missing character: There is no � in font cmr10!
+
+Overfull \hbox (198.22227pt too wide) in paragraph at lines 164--169
+[]\T1/cmr/m/n/10.95 S9.11 sein q sowie V ein []r mit dim V = q beze-ichne (v$[]
+\OML/cmm/m/it/10.95 ; :::; v[]\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 einebasis
+vonVdannsitdiekoordinatenabbildung\OT1/cmr/m/n/10.95 
+[] :
+ []
+
+
+Overfull \hbox (329.53563pt too wide) in paragraph at lines 164--169
+\OML/cmm/m/it/10.95 V \OMS/cmsy/m/n/10.95 ^^@ ^^@ \OML/cmm/m/it/10.95 >[] bez[]
+glichdergeordnetenbasisBeinisomorphismusinsbesonderesindVundK[]isomorphismusdie
+gemS\OT1/cmr/m/n/10.95 9\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 6\OML/cmm/m/it/
+10.95 durchdiebedingung\OT1/cmr/m/n/10.95 ^^H[](\OML/cmm/m/it/10.95 e[]\OT1/cmr
+/m/n/10.95 ) =
+ []
+
+
+! LaTeX Error: Command \textcurrency unavailable in encoding T1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.171 wir zeigen zundä
+                       chst, dass $\Omega_B: V \rightarrow \K^q bijektiv ist $
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+l.171 ...dächst, dass $\Omega_B: V \rightarrow \K
+                                                  ^q bijektiv ist $
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.173  \item
+             $\Omega_B $ist surjektiv, denn : ist
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.173  \item $
+              \Omega_B $ist surjektiv, denn : ist
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (0.34145pt too wide) in paragraph at lines 173--181
+[]$\OT1/cmr/m/n/10.95 
+[]$\T1/cmr/m/n/10.95 ist sur-jek-tiv, denn : ist $[] \OMS/cmsy/m/n/10.95 2 \OML
+/cmm/m/it/10.95 K[]$ \T1/cmr/m/n/10.95 be-liebig, so erf�$[]$llt $\U/msb/m/n/10
+.95 x \OT1/cmr/m/n/10.95 := [][] \OML/cmm/m/it/10.95 []\U/msb/m/n/10.95 v[]$
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.185  \item O
+              mega_B ist injektiv, denn Seien $\mathbb{x,y}\in V$ beliebig, ...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.185  \item Omega_
+                   B ist injektiv, denn Seien $\mathbb{x,y}\in V$ beliebig, ...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+! LaTeX Error: \mathbb allowed only in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.185 ...Omega_B ist injektiv, denn Seien $\mathbb
+                                                  {x,y}\in V$ beliebig, mit ...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.185 ...ist injektiv, denn Seien $\mathbb{x,y}\in
+                                                   V$ beliebig, mit $\Omega_...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.193 \] ==> Omega_
+                   B ist bijektiv
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+! LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.194  \item
+            
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.195  $
+        \Omega_B $ ist klinear denn seien $\mathbb{x,y}\in V in \lambda, \mu...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.195  $
+        \Omega_B $ ist klinear denn seien $\mathbb{x,y}\in V in \lambda, \mu...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.195  $
+        \Omega_B $ ist klinear denn seien $\mathbb{x,y}\in V in \lambda, \mu...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.195  $\Omega
+              _B $ ist klinear denn seien $\mathbb{x,y}\in V in \lambda, \mu...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+LaTeX Warning: Command \k invalid in math mode on input line 195.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.195 ...\mathbb{x,y}\in V in \lambda, \mu \in \k$
+                                                   Mit $\alpha_j := (e_j^(q)...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.195 ...\in V in \lambda, \mu \in \k$ Mit $\alpha
+                                                  _j := (e_j^(q))^T\Omega_B(...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (12.80379pt too wide) in paragraph at lines 193--196
+\T1/cmr/m/n/10.95 ==> Omega$[]\OML/cmm/m/it/10.95 istbijektiv$$\OT1/cmr/m/n/10.
+95 
+[]$ \T1/cmr/m/n/10.95 ist klin-ear denn seien $[] \OMS/cmsy/m/n/10.95 2 \OML/cm
+m/m/it/10.95 Vin^^U; ^^V \OMS/cmsy/m/n/10.95 2 []\OML/cmm/m/it/10.95 Mit$$[] \
+OT1/cmr/m/n/10.95 :=
+ []
+
+! Undefined control sequence.
+l.208  \[==> \lambdax
+                      +\my y= \mathbb{x}=\alpha \sum_{j=1}^{q}\alpha_j \math...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.208  \[==> \lambdax +\my
+                           y= \mathbb{x}=\alpha \sum_{j=1}^{q}\alpha_j \math...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.208 ...^{q}\alpha_j \mathbb{v}_j + \mathbb{y}\my
+                                                  \sum_{j=1}^{q}\beta_j \mat...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.209  = \sum_{j=1}^{q}(\lambda\alpha_j+\my
+                                           \beta_j )\mathbb{v}_j= \omega_B \...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.209 ...y\beta_j )\mathbb{v}_j= \omega_B \lambdax
+                                                  +\muy\]
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.209 ...a_j )\mathbb{v}_j= \omega_B \lambdax+\muy
+                                                  \]
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[4]
+! Undefined control sequence.
+l.222 ...eine lineare abbildung wenn $\Phi _B : \K
+                                                  ^q--> V$ , it
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.223 \phi
+          _B(e_j^(q))
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.224 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! You can't use `macro parameter character #' in vertical mode.
+l.225 #
+       ommitted
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+! LaTeX Error: Command \textcurrency unavailable in encoding T1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.228 ...athbb{N}$ und $V,W \mathcal{K}$-Vektorrä
+                                                  ume, wobei $\dim v=q$ gelt...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing { inserted.
+<to be read again> 
+                   \begingroup 
+l.230  \item Im $\Phi = span (\Phi(v_�
+                                      �),...,\phi(v_2))$ insbesondere ist $\...
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+
+LaTeX Warning: Command \^ invalid in math mode on input line 230.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.230 ... $\Phi = span (\Phi(v_¹),...,\phi(v_2))$
+                                                   insbesondere ist $\Phi$ g...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no � in font cmr8!
+
+! LaTeX Error: Command \textcurrency unavailable in encoding T1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.231 ...nn $\Phi(v_1),..., \Phi(v_q)$ lin unabhä
+                                                  ngig sind
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 237.
+
+
+LaTeX Warning: Command \textcurrency invalid in math mode on input line 237.
+
+
+! LaTeX Error: Command \textcurrency unavailable in encoding T1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.237 seien $V,W \mathcal{K}-Vektorrä
+                                      ume$ mit $\dim V < \inf$ dann sind $V$...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+Missing character: There is no � in font cmr10!
+! Undefined control sequence.
+l.237 ...$W$ genau dann isomorph wenn $\dim V=\Dim
+                                                   W $gilt.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Command \k invalid in math mode on input line 240.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.240 seine $p,q \in \mathbb{N}$ sowie $\phi : \k^
+                                                  q-->\K^p$ eine lineare abb...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing { inserted.
+<to be read again> 
+                   \endtemplate 
+l.240 seine $p,q \in \mathbb{N}$ sowie $\phi : \k^
+                                                  q-->\K^p$ eine lineare abb...
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.240 seine $p,q \in \mathbb{N}$ sowie $\phi : \k^
+                                                  q-->\K^p$ eine lineare abb...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.240 seine $p,q \in \mathbb{N}$ sowie $\phi : \k^
+                                                  q-->\K^p$ eine lineare abb...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Undefined control sequence.
+l.240 ...q \in \mathbb{N}$ sowie $\phi : \k^q-->\K
+                                                  ^p$ eine lineare abbildung...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.240 ...genau dann eine Matrix $\mathbb{A} \in \K
+                                                  ^{p\times q}$ mit $\Phi(x)...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Command \k invalid in math mode on input line 241.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.241 für alle $x \in \k^
+                          q$, nämlich $A= (\Phi(e_1^(q)),...,\Phi(e_q^(q)))$
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing { inserted.
+<to be read again> 
+                   \endtemplate 
+l.241 für alle $x \in \k^
+                          q$, nämlich $A= (\Phi(e_1^(q)),...,\Phi(e_q^(q)))$
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.241 für alle $x \in \k^
+                          q$, nämlich $A= (\Phi(e_1^(q)),...,\Phi(e_q^(q)))$
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.241 für alle $x \in \k^
+                          q$, nämlich $A= (\Phi(e_1^(q)),...,\Phi(e_q^(q)))$
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+! LaTeX Error: Command \textcurrency unavailable in encoding T1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.241 für alle $x \in \k^q$, nä
+                                 mlich $A= (\Phi(e_1^(q)),...,\Phi(e_q^(q)))$
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+l.243 .....,\Phi(e_q^(q)))$. nach Bsp ist $\Psi:\K
+                                                  ^q-->\K^p$ gemäß $\Psi(x...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.243 ...(e_q^(q)))$. nach Bsp ist $\Psi:\K^q-->\K
+                                                  ^p$ gemäß $\Psi(x):= Bx$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Command \textcurrency unavailable in encoding T1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.243 ...)$. nach Bsp ist $\Psi:\K^q-->\K^p$ gemä
+                                                  ß $\Psi(x):= Bx$
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `latin1'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.243 .... nach Bsp ist $\Psi:\K^q-->\K^p$ gemäß
+                                                   $\Psi(x):= Bx$
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+! Undefined control sequence.
+<recently read> \K 
+                   
+l.246 ==> $A=B$ ist eine matrix aus $\K
+                                       ^{p\times q}$ mit
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.248 für alle $x \in \K
+                         ^q$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.249 sei nun $A \in \K
+                       ^{p \times q}$  beliebig mit (1)für alle $x in \K^q$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.249 ...s q}$  beliebig mit (1)für alle $x in \K
+                                                  ^q$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[5]
+
+LaTeX Warning: Command \k invalid in math mode on input line 254.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.254 ...e Unterscheidungvon ,lin abb $ \phi : \k^
+                                                  q-->\K^p $und matritzen au...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing { inserted.
+<to be read again> 
+                   \endtemplate 
+l.254 ...e Unterscheidungvon ,lin abb $ \phi : \k^
+                                                  q-->\K^p $und matritzen au...
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.254 ...e Unterscheidungvon ,lin abb $ \phi : \k^
+                                                  q-->\K^p $und matritzen au...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.254 ...e Unterscheidungvon ,lin abb $ \phi : \k^
+                                                  q-->\K^p $und matritzen au...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Undefined control sequence.
+l.254 ...rscheidungvon ,lin abb $ \phi : \k^q-->\K
+                                                  ^p $und matritzen aus \K^p...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.254 ... \phi : \k^q-->\K^p $und matritzen aus \K
+                                                  ^p\times q also nicht wese...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.254 ...\phi : \k^q-->\K^p $und matritzen aus \K^
+                                                  p\times q also nicht wesen...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 255.
+
+
+LaTeX Warning: Command \textcurrency invalid in math mode on input line 255.
+
+
+! LaTeX Error: Command \textcurrency unavailable in encoding T1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.255 ...zen gibt es jedoch nuc in den Standardrä
+                                                  umen .
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.256 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+Missing character: There is no � in font cmr10!
+
+Overfull \hbox (403.30476pt too wide) in paragraph at lines 252--256
+\OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 >[]$\T1/cmr/m/n/10.95 und ma-tritze
+n aus $[] \OMS/cmsy/m/n/10.95 ^^B \OML/cmm/m/it/10.95 qalsonichtwesentlich:eine
+solchenzusammenhangzwischenlinearenabbildungenundmatrizengibtesjedochnucindenSt
+andardrumen:$ 
+ []
+
+! Undefined control sequence.
+l.262 ...lpha_{jk})_{j=1,...,q\\ k=1,...,p} \in \K
+                                                  ^{p\times q}$ mit
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Command \textcurrency unavailable in encoding T1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.264 nä
+         mlich $A = (\omega_C(\Phi(v_1),...,\omega_C(\Phi(v_q))$ wobei  $\Om...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \k invalid in math mode on input line 264.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.264 ...C(\Phi(v_q))$ wobei  $\Omega_C : W--> \k^
+                                                  p$ die koordinatenabbildun...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing { inserted.
+<to be read again> 
+                   \endtemplate 
+l.264 ...C(\Phi(v_q))$ wobei  $\Omega_C : W--> \k^
+                                                  p$ die koordinatenabbildun...
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.264 ...C(\Phi(v_q))$ wobei  $\Omega_C : W--> \k^
+                                                  p$ die koordinatenabbildun...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.264 ...C(\Phi(v_q))$ wobei  $\Omega_C : W--> \k^
+                                                  p$ die koordinatenabbildun...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Undefined control sequence.
+l.266 Es gibt genau eine matrix $\tilde{A} \in \K
+                                                 ^{p\times q}$ mit
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Double subscript.
+l.267 $\Omega_C(\Phi(v))=\tilde{A}_\Omega_
+                                          B (v)$ für alle $v in V$ (3)
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+
+! LaTeX Error: Command \textcurrency unavailable in encoding T1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.268 nä
+         mlich \tilde{ A}=A
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package amsmath Error: \tilde allowed only in math mode.
+
+See the amsmath package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.268 nämlich \tilde{ A}
+                         =A
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Command \textcurrency unavailable in encoding T1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.271 ...tzt der Vektor $\Phi (v_k) $aus $W$ gemä
+                                                  ß lemma 3.6 eine eindeuti...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `latin1'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.271 ...t der Vektor $\Phi (v_k) $aus $W$ gemäß
+                                                   lemma 3.6 eine eindeutige...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+! Undefined control sequence.
+l.273 ==> $A \in \K
+                   ^{p\times q}$ mit (1) existiert und ist eindeutig bestimmt.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 288.
+
+
+LaTeX Warning: Command \textcurrency invalid in math mode on input line 288.
+
+
+! LaTeX Error: Command \textcurrency unavailable in encoding T1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.288 ...^p{\beta_{k}v_k} und wegen der linearitä
+                                                  t von \Phi und (1) somit
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+Missing character: There is no � in font cmr10!
+
+Overfull \hbox (458.15646pt too wide) detected at line 294
+\OT1/cmr/m/n/10.95 = \OML/cmm/m/it/10.95 ![]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/1
+0.95 v\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 dannhabenwirv \OT1/cmr/m/n/10.95 
+= [] = 1[][]\OML/cmm/m/it/10.95 undwegenderlinearittvon\OT1/cmr/m/n/10.95 ^^H\O
+ML/cmm/m/it/10.95 und\OT1/cmr/m/n/10.95 (1)\OML/cmm/m/it/10.95 somit\OT1/cmr/m/
+n/10.95 ^^H(\OML/cmm/m/it/10.95 v\OT1/cmr/m/n/10.95 ) = [] = 1[][] = (1) [] = 1
+[][] = [] = 1[][]
+ []
+
+[6]
+! Missing } inserted.
+<inserted text> 
+                }
+l.298  \sum_j=1^p{\alpha_{1k}\beta_k\\
+                                      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.300   \sum_j=1^p{\alpha_{1k}\beta_k\\
+                                       
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+! Package amsmath Error: \tilde allowed only in math mode.
+
+See the amsmath package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.313 ...ilde{A}:= A$ erfüllt (3) sei nun \tilde$
+                                                  { A} \in \K^{p\times q}$ b...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.313 ...= A$ erfüllt (3) sei nun \tilde${ A} \in
+                                                   \K^{p\times q}$ beliebig ...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Undefined control sequence.
+l.313 ...$ erfüllt (3) sei nun \tilde${ A} \in \K
+                                                  ^{p\times q}$ beliebig mit...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Command \textcurrency unavailable in encoding T1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.315 zunä
+           chst \[\omega_B (v_k)=
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (9.6023pt too wide) detected at line 327
+[] \OT1/cmr/m/n/10.95 = []\OML/cmm/m/it/10.95 I[] \OT1/cmr/m/n/10.95 = [](\OML/
+cmm/m/it/10.95 e[]q\OT1/cmr/m/n/10.95 ))\OML/cmm/m/it/10.95 ; :::; \OT1/cmr/m/n
+/10.95 (\OML/cmm/m/it/10.95 e[]q\OT1/cmr/m/n/10.95 )) = ([]\OML/cmm/m/it/10.95 
+e[]q\OT1/cmr/m/n/10.95 ))\OML/cmm/m/it/10.95 ; :::; []\OT1/cmr/m/n/10.95 (\OML/
+cmm/m/it/10.95 e[]q\OT1/cmr/m/n/10.95 )) = (^^H\OML/cmm/m/it/10.95 e[]q\OT1/cmr
+/m/n/10.95 ))\OML/cmm/m/it/10.95 ; :::; ^^^\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10
+.95 e[]q\OT1/cmr/m/n/10.95 )) = \OML/cmm/m/it/10.95 A
+ []
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `latin1'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.330 dann heiß
+                t die durch (2) gegebene Matrix $A \in  \K^{p\times q} $die ...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+! Undefined control sequence.
+l.330 ... die durch (2) gegebene Matrix $A \in  \K
+                                                  ^{p\times q} $die darstell...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Command \textcurrency unavailable in encoding T1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.332 Kennt man die matrix $\Phi _{B,C}$ so lä
+                                               sst sich gemäß (3) dann $\P...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Command \textcurrency unavailable in encoding T1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.332 ...matrix $\Phi _{B,C}$ so lässt sich gemä
+                                                  ß (3) dann $\Phi (v) $fü...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `latin1'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.332 ...trix $\Phi _{B,C}$ so lässt sich gemäß
+                                                   (3) dann $\Phi (v) $für ...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! LaTeX Error: Command \textcurrency unavailable in encoding T1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.334 $(\beta_1,..., \beta_q) $ und erhä
+                                         lt $\Phi(v)$ gemäß $\sum \gamma_j...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Command \textcurrency unavailable in encoding T1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.334 ...., \beta_q) $ und erhält $\Phi(v)$ gemä
+                                                  ß $\sum \gamma_jw_j$.
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `latin1'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.334 ... \beta_q) $ und erhält $\Phi(v)$ gemäß
+                                                   $\sum \gamma_jw_j$.
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+[7] (./skript.aux) ) 
+Here is how much of TeX's memory you used:
+ 2256 strings out of 493013
+ 26473 string characters out of 6139317
+ 95250 words of memory out of 5000000
+ 5800 multiletter control sequences out of 15000+600000
+ 19432 words of font info for 56 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 27i,9n,26p,243b,207s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1
+.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/sha
+re/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/
+share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/
+public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/public/am
+sfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sf
+bx1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></us
+r/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-d
+ist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf-dist/fonts/type1
+/public/cm-super/sfrm1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-supe
+r/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb>
+
+Output written on skript.pdf (7 pages, 254794 bytes).
+PDF statistics:
+ 97 PDF objects out of 1000 (max. 8388607)
+ 70 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

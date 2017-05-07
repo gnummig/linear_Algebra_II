@@ -1,0 +1,130 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{xstring}
+\usepackage{amssymb} 
+\usepackage{amsmath} 
+\usepackage{private}
+\usepackage[shortlabels]{enumitem} 
+\newcommand{\RN}[1]{%
+  \textup{\uppercase\expandafter{\romannumeral#1}}%
+}
+%opening
+\title{Exercises to Linear Algebra $\RN{2}$,\\
+Series 4}
+\author{\MyDetails}
+
+\begin{document}
+
+\maketitle
+\setcounter{section}{4}
+\subsection{}
+\label{sec:one}
+We are looking for a matrix $\Gamma$ that fulfills $ B=B'\Gamma $
+
+with $B= \begin{pmatrix}
+-1&0\\2&1
+\end{pmatrix}$ and $B'= \begin{pmatrix}
+3&1\\4&1
+\end{pmatrix}$
+the matrix representing the problem is:
+\[ \begin{pmatrix}
+3&0&1&0&\vline&-1\\
+0&3&0&1&\vline&0\\
+4&0&1&0&\vline&2\\
+0&4&0&1&\vline&1\\
+\end{pmatrix}\]
+which can be formed into
+\[ \begin{pmatrix}
+1&0&0&0&\vline&3\\
+0&1&0&0&\vline&1\\
+0&0&1&0&\vline&-10\\
+0&0&0&1&\vline&-3\\
+\end{pmatrix}\]
+hence \[ \Gamma= \begin{pmatrix}
+3&1\\-10&-3
+\end{pmatrix}\]
+\subsection{}
+\label{sec:two}
+\begin{enumerate}[(a)]
+	\item let $B$ be a  Basis of $V$, then  $Rang_K \Phi= dim_K span(\Phi(B))$. There is exactly $dim_K V$ elements in $ span (\Phi(B))$ and some of them might as well be linearly dependent. So we can reduce the span to only linear independent vectors $B'$ (which is a basis of the image space). hence we have $Rang_K\Phi\leq dim_K V$\\
+		From the definition of $\Phi$ we know that $Im (\Phi) \subseteq W$ thus $Rang_K \Phi \leq dim_K W$
+	\item in the case of $ \Psi$ being surjective we can find a set of $C_j$ such that $B_j=\Psi(C_j)$ hence $Im( \Phi\Psi)=Im (\Phi)$.\\
+		if $\Psi $ is not surjective, there must be at least one  $B_k$ for which we cannot find a $C_k$ hence
+		$B'_k \notin span(\Phi\Psi C_j)$ and $Rang (\Phi\Psi) < Rang (\Phi)$
+	\item in the case of $Theta$ being injective, we know that $B'_j$ are mapped to linearly independent vectors $ \Theta(B'_j)$ hence $ dim (Im(\Theta\Phi))=dim(Im\Phi)$.\\
+		For $\Theta$ linear and not injective, we can find a new basis $B*$ of $Im \Phi$ such that at least two of the $B_j$ get mapped to the same $D*_j=\Theta(B*_j)$. We do this by picking two vectors from $Im \Phi$ that are mapped to the same vector in $Z$ (If there are no such two vectors, then $\Theta$ is injective on $Im \Phi$ which gives us equality as above).
+		If the two vectors are linearly dependent, we make them independent by adding a linearly independent vector of our old basis. By linearity the two vectors stil are mapped to the same vector in $Z$.
+		from these two vectors we can construct a basis by appending linearly independent vectors of our old basis.
+		Hence we for this basis it is easy to see that $dim (span(\Theta\Phi(B*))) \leq dim(span(\Phi(B*)))$.
+
+\end{enumerate}
+\subsection{}
+\label{sec:three}
+
+\begin{enumerate}[(a)]
+	\item if we have a permutation $\pi=(j_1,j_2,\dots,j_n)$ and swap exactly two numbers $j_k$ and $j_l$ with $k<l$
+		we get a new permutation
+		$\pi_1=(j_1,j_2,\dots,j_{k-1},j_l,j_{k+1},\dots,j_{l-1},j_k,j_{l+1},\dots,j_n)$ in this permutation we now have some $m$ of the
+		$l-k$	elements that are in between, which have larger indeces and moved to the left of the k'th. On the other hand we have  $l-k-m$ elements with smaller indeces for which $k$ moved to the right. So we a difference of $2m-l+k$ of terms in the exponent. similarly we find that for the $l$'th element the  difference is some $2p-l-k$. which gives in total $2m+2p-2l+2k$ and since for the $k$'th element not only $m$ elements from inbetween, but also the $l$'th element are now left, the exponent changes by an odd number which leads to the inversion of the sign
+	\item  lets take the ordered permutation of n numbers and permute only the first 2: we get exactly 2 permutations, one is even and one is odd.\\
+		Now lets permutate the third element with the first two positions, where the first two positins are considered identical, since we already have all permutations of the first two elements.
+		There is 3 permutations for the third element, some change sign, some don't, but as we started with the same amount of even and odd permutations, for every even permutations that is now odd, there is an odd permutation that is now even.
+		Thus when we combine, we get $2\times3$ permutations, of which half are even and half are odd. \\
+		For the n'th element we therefore get $2\times3\times\dots\times n = n!$ permutations, of which half are even and half are odd.
+	\item we look for the first element. for each element in $f_1$ , ie for each element that is left of 1, but bigger than one, we do a pair inversion starting with the rightmost element. Now $1$ is in its natural position. after doing this $n-1$ times we notice that the $n-1$ first positions are in natural order and that the $n$'th element can only be in its natural position, too. \\
+		Hence we did $\sum\limits_{k=1}^{n-1}f_k$ pairwise inversions to get to the natural permutation.
+\end{enumerate}
+\subsection{}
+\label{sec:four}
+%det {{1,3,0,4},{0,0,1,-1},{1,2,pi,49}{ 0,1, 1/2,3}}
+\begin{multline*}
+	det \begin{pmatrix}
+	1&3&0&4\\
+	0&0&1&-1\\
+	1&2&\pi&49\\
+	0&1& \frac{1}{2}&3\\
+\end{pmatrix}=-(1*1*2*3)+(1*1*49*1)+(1*(-1)*2*\frac{1}{2})\\-(1*(-1)*\pi*1)+(3*1*1*3)+(3*(-1)*1*\frac{1}{2})-(4*1*1*1)\\
+	= -6+49-1+\pi+9+\frac{3}{2}-4\\
+	=48 +\frac{1}{2} +\pi
+\end{multline*}
+\begin{multline*}
+det \begin{pmatrix}
+i & 8 &1+i\\
+-2+5i&4-2i&-5\\
+1+3i&-2i&5\\
+\end{pmatrix}=(i(4-2i)5)-(i(-2i)(-5))+(8(-5)(1+3i))\\-(8(-2+5i)5)+( ( 1+i)(-2+5i(-2i))-( (1+i)(4-2i)(1+3i)
+	\end{multline*}
+	\begin{multline*}
+		= 20i+10+10-40-120i+80-200i+(( 1+i)(4i+10) )-( (1+i)(4+12i-2i+6)\\
+		=-300i+60+4i+10-4+10i-10-20i+10\\
+		=-306i+66
+	\end{multline*}
+	\begin{equation*}
+		det \begin{pmatrix}
+		23&7&8&14&1\\
+		117&0&3&1&4\\
+		24&3&1&1&1\\
+		8&12&0&\pi&3\\
+		6&-9&1&1-\pi&-2\\
+\end{pmatrix}\end{equation*}
+we can add the last and the secondlast row to see it is identical to the third row:
+\begin{equation*}
+	=	\begin{pmatrix}
+		23&7&8&14&1\\
+		117&0&3&1&4\\
+		24&3&1&1&1\\
+		24&3&1&1&1\\
+		6&-9&1&1-\pi&-2\\
+		\end{pmatrix}
+\end{equation*}
+Hence the rows of the matrix are linearly dependent and the determinant is $ det A= 0$
+\subsection{}
+\label{sec:five}
+
+\begin{enumerate}[(a)]
+	\item proof by contradiction: suppose $v_1,\dots,v_t$ are linearly dependent, then for one of the vectors we can find a linear combination $ v_j=\sum_{i\neq j} \alpha_i v_i$. Since $\Phi$ is linear we can then construct $ w_j=\Phi(v_j)=\Phi(\sum_{i\neq j}\alpha _iv_i)=\sum_{i\neq j}\Phi(\alpha _i v_i)=\sum_{i\neq j} w_i$ hence $w_1,\dots,w_t$ are linearly dependent, which contradicts the assumption, thus $v_1,\dots,v_t$ are linearly indepentent
+	\item $ q \geq r$ follows directly from 4.2 (a)\\
+		case $r=q$:we can substitute $q$ for $r$ and see $v_1,\dots,v_q$ are linearly independent and thus form a basis of $V$ with $dim_K V=q$\\
+		case $q>r$:
+\end{enumerate}
+\end{document}

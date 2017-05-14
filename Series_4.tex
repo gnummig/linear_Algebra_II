@@ -1,7 +1,7 @@
 \documentclass[a4paper,10pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage{xstring}
-\usepackage{amssymb} 
+\usepackage{amssymb,bbm} 
 \usepackage{amsmath} 
 \usepackage{private}
 \usepackage[shortlabels]{enumitem} 
@@ -125,6 +125,10 @@ Hence the rows of the matrix are linearly dependent and the determinant is $ det
 	\item proof by contradiction: suppose $v_1,\dots,v_t$ are linearly dependent, then for one of the vectors we can find a linear combination $ v_j=\sum_{i\neq j} \alpha_i v_i$. Since $\Phi$ is linear we can then construct $ w_j=\Phi(v_j)=\Phi(\sum_{i\neq j}\alpha _iv_i)=\sum_{i\neq j}\Phi(\alpha _i v_i)=\sum_{i\neq j} w_i$ hence $w_1,\dots,w_t$ are linearly dependent, which contradicts the assumption, thus $v_1,\dots,v_t$ are linearly indepentent
 	\item $ q \geq r$ follows directly from 4.2 (a)\\
 		case $r=q$:we can substitute $q$ for $r$ and see $v_1,\dots,v_q$ are linearly independent and thus form a basis of $V$ with $dim_K V=q$\\
-		case $q>r$:
+		case $q>r$: if we take the basis $v_1,\dots,v_q$ of $V$ and apply $\Phi$ then for each $v_i$ we can write $\Phi(v_i)=\sum_{j=1}^{r} \alpha _j w_j$ and we see that as the first $r$ $\Phi(v_j)$ correspont to the basis $w_j$ and the the rest must be linear combinations, thus belong to the Kernel and obviously there are $q-r$ such vectors. In the other direction, we can rewrite any basis $z_1,\dots,z_{q-r}$ of $Ker\Phi$ in terms of the $q-r$ last basisvectors $v_r,\dots,v_q$. Thus these vectors are linearly indepentent to $v_1,\dots,v_r$ and we can append the basis of $Ker\Phi$ with the vectors $v_1,\dots,v_r$ to form a basis of length $ q-r+r=q= dim_K V$ thus a basis of $V$
+	\item \begin{enumerate}[(i)]
+		\item case $r=p=q$ choose $w_i=\Phi(v_i)$ then  $\Phi_{B,B'}=Id_r$ is the transformation matrix for $\Phi$
+		\item case $r=p<q$ choose $v_1,\dots,v_r \in Rang \Phi$ with $w_j=\Phi(v_j)$ then $\Phi_{B,B'}= \left( Id_r, 0_{r\times(q-r)} \right)$ is a transformatin matrix for $\Phi$
+	\end{enumerate}
 \end{enumerate}
 \end{document}

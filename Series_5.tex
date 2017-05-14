@@ -1,0 +1,166 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{xstring}
+\usepackage{amssymb} 
+\usepackage{amsmath,bbm}
+\usepackage[shortlabels]{enumitem} 
+\usepackage{private} 
+\newcommand{\RN}[1]{%
+  \textup{\uppercase\expandafter{\romannumeral#1}}%
+}
+%opening
+\title{Exercises to Linear Algebra $\RN{2}$,\\
+Series 5 }
+\author{\MyDetails}
+
+\begin{document}
+
+\maketitle
+\setcounter{section}{5}
+\subsection{}
+\label{sub:one}
+\begin{equation*}
+	A:= \begin{pmatrix}
+		a&b&b&\dots&b\\
+		b&a&b&\dots&b\\
+		b&b&a&\dots&b\\
+		\vdots&\vdots&\vdots&\ddots&\vdots\\
+		b&b&b&\dots&a\\
+	\end{pmatrix}
+\end{equation*}
+by substracting the next row from each row, the matrix can, without changing the determinant, be rewritten as:
+\begin{equation*}
+	\begin{pmatrix}
+		a-b&b-a&0&\dots&0\\
+		0&a-b&b-a&\dots&0\\
+		\vdots&\vdots&\ddots&\ddots&\vdots\\
+		0&0&\dots&a-b&b-a&\\
+		b&b&\dots&b&a\\
+	\end{pmatrix}
+\end{equation*}
+we can write the determinant as:
+\begin{equation*}
+	(a-b)^n\times \det \begin{pmatrix}
+		1&-1&0&\dots&0\\
+		0&1&-1&\dots&0\\
+		\vdots&\vdots&\ddots&\ddots&\vdots\\
+		0&0&\dots&1&-1\\
+		b&b&\dots&b&a\\
+	\end{pmatrix}
+\end{equation*}
+by adding n times the n'th row to the last the determinant can be rewritten as:
+\begin{equation*}
+	(a-b)^n \det \begin{pmatrix}
+		1&-1&0&\dots&0\\
+		0&1&-1&\dots&0\\
+		\vdots&\vdots&\ddots&\ddots&\vdots\\
+		0&0&\dots&1&-1\\
+		0&0&\dots&0&a-bn\\
+	\end{pmatrix}=(a+nb)(a-b)^n
+\end{equation*}
+note that the last matrix is upper diagonal, and therefore the determinant is the product of the entries of the diagonal.
+\subsection{}
+\label{sub:two}
+\begin{enumerate}[(a)]
+	\item we can append the matrix multiplication  $ (AB)_{ij}=\sum\limits_{k=1}^{q} a_{ik}b_{kj}$
+		with zero collumns for $A$ and zero rows for $B$, to get a form   $ (A'B')_{ij}= \sum\limits_{k=1}^{p} a_{ik}b_{kj}$ with $ 
+		a_{ik}=0\quad\forall i>q;\quad b_{kj}=0\quad\forall j>q$ \\
+		The resulting matrices $A'$ and $B'$ are square and have linearly dependent rows, hence: $ \det(AB)=\det(A'B')=\det(A')\det(B')=0$
+	\item writing the determinant as the Leibnitz formula we have:
+		\begin{equation*}
+			\det (M)=\sum_{\pi \in S_n} sign(\pi) \prod_{i=1}^{n}m_{i\pi_i} 
+		\end{equation*}
+		for every entry $m_{i\pi_i}$ that we chose to be in $B$ we have to choose one element from $0_{q\times p}.$ therefore to get nonzero terms in the sum the first p factors  of the product must be from $A$ and the last $q$ factors must be in $D$. We can rewrite the sum as:
+		\begin{equation*}
+			\det(M)= \sum_{\pi^p\circ\pi^q \in S_n} sign (\pi^p) sign(\pi^q) \prod_{i=1}^{p}m_{i\pi_i^p}\prod_{j=p}^{q}m_{j\pi_j^q}
+		\end{equation*}
+		\begin{equation*}
+			= \sum_{\pi^p\in S_p}\sum_{\pi^q\in S_q}sign(\pi^p) \prod_{i=1}^{p}m_{i\pi_i^p}\times sign(\pi^q)\prod_{j=1}^{q}m_{j\pi_j^q}	
+		\end{equation*}
+		\begin{equation*}
+			= \sum_{\pi^p\in S_p}sign(\pi^p) \prod_{i=1}^{p}m_{i\pi_i^p}\times \sum_{\pi^q\in S_q}sign(\pi^q)\prod_{j=1}^{q}m_{j\pi_j^q}= \det A \times \det D	
+		\end{equation*}
+\end{enumerate}
+\subsection{}
+\label{sub:three}
+\begin{equation*}
+	f(z):= \det \begin{pmatrix}
+	1&1&1&0&1\\
+	2&0&-1&1&z\\
+	4&2&1&1&z^2\\
+	8&2&-1&2&z^3\\
+	16&1&1&-1&z^4\\
+	\end{pmatrix}
+\end{equation*}
+substract the first row twice from the third, twice from the fourth and once from the fifth to get:
+\begin{equation*}
+	= \det\begin{pmatrix}
+	1&1&1&0&1\\
+	2&0&-1&1&z\\
+	2&0&-1&1&z^2-2\\
+	6&0&-3&2&z^3-2\\
+	15&0&0&-1&z^4-1\\
+	\end{pmatrix}
+\end{equation*}
+applying laplace expansion to the second column yields:
+\begin{equation*}
+	= -\det \begin{pmatrix}
+	2&-1&1&z\\
+	2&-1&1&z^2-2\\
+	6&-3&2&z^3-2\\
+	15&0&-1&z^4-1\\
+	\end{pmatrix}
+\end{equation*}
+substracting the first row fron the second ant then developing the second row yields:
+\begin{equation*}
+	= -(z^2-z-2)\det \begin{pmatrix}
+	2&-1&1\\
+	6&-3&2\\
+	15&0&-1\\
+	\end{pmatrix}
+\end{equation*}
+The remaining determinant does not depend on $z$ and it can be shown to be nonzero, hence the problem of finding the roots of $f(z)$ can be reduced to solving:
+\begin{equation*}
+	z^2-z-2=0=(z+1)(z-2)
+\end{equation*}
+We expect to find two solutions and guessing small numbers we find $z_1=-1$ and $z_2=2$.
+\subsection{}
+\label{sub:four}
+\begin{enumerate}[(a)]
+	\item we denote $ \det(A)$ as:
+		\begin{equation*}
+			\det(A)= \sum_{\pi\in S_n} sign(\pi) \prod_{i=1}^{q}a_{i\pi_i} \qquad A_{ij}^T=A_{ji}
+		\end{equation*}
+		Hence:
+		\begin{equation*}
+			\det(A^T)= \sum_{\pi\in S_n} sign(\pi) \prod_{i=1}^{q}a_{\pi_ii} 
+		\end{equation*}
+		The product in $K$ is commutative hence we can reorder the factors according to the first indice after replacing $i$ with $\pi^{-1}_i$ and $\pi_i$ with $i$.
+		\begin{equation*}
+			\det(A^T)= \sum_{\pi^{-1}\in S_n} sign(\pi^{-1}) \prod_{i=1}^{q}a_{i\pi^{-1}_i}\equiv \det(A) 
+		\end{equation*}
+	\item we have shown in (a) that $ \det(A^*)=\det(\overline A)$ so we are left with:
+	\begin{equation*}
+	\det(\overline A)= \sum_{\pi\in S_n} sign(\pi) \prod_{i=1}^{q}\overline{a_{i\pi_i}} 
+	\end{equation*}
+	Note that $sign(\pi)=\overline{sign(\pi)}\in \mathbbm{R}$ and that the complex conjugate is distributive under multiplication and addition.
+	\begin{equation*}
+		= \sum_{\pi\in S_n}\overline{ sign(\pi) \prod_{i=1}^{q}a_{i\pi_i}}\equiv \overline \det(A) 
+	\end{equation*}
+\item Let the compound matrix be denoted with $M$. Doing a Laplace expansion for the first $q_1$ columns, we get:
+	\begin{equation*}
+		\det(M)= \underbrace{\sum_{\pi\in S_{q_1}}sign(\pi)\prod_{i=1}^{q_1}(A_{11})_{i\pi_i}}_{\det(A_{11})} \begin{pmatrix}
+			A_{22}&A_{23}&\dots&A_{2n}\\
+			0_{q_3\times q_2}&A_{33}&\dots&A_{3n}\\
+			\vdots&\vdots&\ddots&\vdots\\
+			0_{q_n\times q_2}&0_{q_n\times q_3}&\dots&A_{nn}\\
+		\end{pmatrix}
+	\end{equation*}
+	we can do this $n$ times to end with:
+	\begin{equation*}
+		\det(M)=\prod_{i=1}^{n}\det(A_{ii})
+	\end{equation*}
+	For upper triangular block matrices with quadratic diagonal blocks, the same result can be obtained by either computing the determinant of the transpose matrix in the same fashion, or by changing the procedure to expand rows instead of columns. I think this is trivial enough to not write it out again.
+\end{enumerate}
+
+\end{document}
